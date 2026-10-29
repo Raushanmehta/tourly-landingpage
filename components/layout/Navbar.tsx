@@ -11,41 +11,82 @@ interface NavbarProps {
     data?: TourlyNavbarData;
 }
 
-const sectionIds = ["home", "about", "destinations", "why-choose-us", "stats", "testimonials", "faqs"];
-
 export default function Navbar({ data = site.navbar }: NavbarProps) {
     const [mobileOpen, setMobileOpen] = useState(false);
-    const [activeSection, setActiveSection] = useState<string>("home");
+    const [activeSection, setActiveSection] = useState<string>("#home");
     const [isScrolled, setIsScrolled] = useState(false);
     const { openModal } = useModal();
 
-    // ScrollSpy to keep active navbar link in sync with user scrolling
+    // Scroll spy & hash navigation
     useEffect(() => {
+        const sections = [
+            { id: "home", href: "#home" },
+            { id: "about", href: "#about" },
+            { id: "destinations", href: "#destinations" },
+            { id: "why-choose-us", href: "#why-choose-us" },
+            { id: "stats", href: "#why-choose-us" },
+            { id: "testimonials", href: "#testimonials" },
+            { id: "faqs", href: "#faqs" },
+        ];
+
         const handleScroll = () => {
             const scrollY = window.scrollY;
             setIsScrolled(scrollY > 20);
 
-            if (scrollY < 180) {
-                setActiveSection("home");
+            if (scrollY < 60) {
+                setActiveSection("#home");
                 return;
             }
 
-            for (let i = sectionIds.length - 1; i >= 0; i--) {
-                const id = sectionIds[i];
-                const el = document.getElementById(id);
+            if (window.innerHeight + scrollY >= document.documentElement.scrollHeight - 50) {
+                setActiveSection("#faqs");
+                return;
+            }
+
+            for (let i = sections.length - 1; i >= 0; i--) {
+                const el = document.getElementById(sections[i].id);
                 if (el) {
                     const rect = el.getBoundingClientRect();
-                    if (rect.top <= 160) {
-                        setActiveSection(id);
-                        break;
+                    if (rect.top <= 100) {
+                        setActiveSection(sections[i].href);
+                        return;
                     }
                 }
             }
         };
 
+        const lenis = window.__lenis;
+        if (lenis && typeof lenis.on === "function") {
+            lenis.on("scroll", handleScroll);
+        }
         window.addEventListener("scroll", handleScroll, { passive: true });
         handleScroll();
-        return () => window.removeEventListener("scroll", handleScroll);
+
+        // Initial hash scroll on mount
+        if (typeof window !== "undefined" && window.location.hash) {
+            const hash = window.location.hash;
+            const target = document.querySelector(hash) as HTMLElement | null;
+            if (target) {
+                setTimeout(() => {
+                    const navHeight = 80;
+                    const targetY = Math.max(0, target.getBoundingClientRect().top + window.scrollY - navHeight);
+                    const l = window.__lenis;
+                    if (l) {
+                        l.scrollTo(targetY, { duration: 0.85 });
+                    } else {
+                        window.scrollTo({ top: targetY, behavior: "smooth" });
+                    }
+                    setActiveSection(hash);
+                }, 200);
+            }
+        }
+
+        return () => {
+            if (lenis && typeof lenis.off === "function") {
+                lenis.off("scroll", handleScroll);
+            }
+            window.removeEventListener("scroll", handleScroll);
+        };
     }, []);
 
     // Prevent body scroll when mobile menu is open
@@ -60,39 +101,35 @@ export default function Navbar({ data = site.navbar }: NavbarProps) {
         };
     }, [mobileOpen]);
 
-    const isItemActive = (href: string) => {
-        const cleanId = href.replace("#", "");
-        return activeSection === cleanId;
-    };
-
     const handleNavClick = (e: React.MouseEvent, href: string) => {
         e.preventDefault();
         setMobileOpen(false);
+        setActiveSection(href);
 
-        if (href === "#home") {
-            setActiveSection("home");
-            if (typeof window !== "undefined") {
-                if (window.__lenis) {
-                    window.__lenis.scrollTo(0, { offset: 0, duration: 1.2 });
-                } else {
-                    window.scrollTo({ top: 0, behavior: "smooth" });
-                }
+        if (typeof window === "undefined") return;
+
+        if (href === "#home" || href === "/" || href === "#") {
+            const lenis = window.__lenis;
+            if (lenis) {
+                lenis.scrollTo(0, { duration: 0.85 });
+            } else {
+                window.scrollTo({ top: 0, behavior: "smooth" });
             }
+            window.history.pushState(null, "", "/");
             return;
         }
 
-        const targetId = href.replace("#", "");
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            setActiveSection(targetId);
-            if (typeof window !== "undefined") {
-                if (window.__lenis) {
-                    window.__lenis.scrollTo(targetElement, { offset: -80, duration: 1.2 });
-                } else {
-                    const y = targetElement.getBoundingClientRect().top + window.scrollY - 80;
-                    window.scrollTo({ top: y, behavior: "smooth" });
-                }
+        const target = document.querySelector(href) as HTMLElement | null;
+        if (target) {
+            const navHeight = 80;
+            const targetY = Math.max(0, target.getBoundingClientRect().top + window.scrollY - navHeight);
+            const lenis = window.__lenis;
+            if (lenis) {
+                lenis.scrollTo(targetY, { duration: 0.85 });
+            } else {
+                window.scrollTo({ top: targetY, behavior: "smooth" });
             }
+            window.history.pushState(null, "", href);
         }
     };
 
@@ -126,7 +163,7 @@ export default function Navbar({ data = site.navbar }: NavbarProps) {
                     {/* Desktop navigation links */}
                     <nav className="hidden lg:flex items-center gap-7 xl:gap-8">
                         {data.navItems.map((item) => {
-                            const active = isItemActive(item.href);
+                            const active = activeSection === item.href;
 
                             return (
                                 <a
@@ -195,6 +232,7 @@ export default function Navbar({ data = site.navbar }: NavbarProps) {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
+                            transition={{ duration: 0.2 }}
                             onClick={() => setMobileOpen(false)}
                             className="fixed inset-0 top-20 bg-black/40 backdrop-blur-xs z-40 lg:hidden"
                         />
@@ -204,12 +242,12 @@ export default function Navbar({ data = site.navbar }: NavbarProps) {
                             initial={{ opacity: 0, height: 0 }}
                             animate={{ opacity: 1, height: "auto" }}
                             exit={{ opacity: 0, height: 0 }}
-                            transition={{ duration: 0.25 }}
-                            className="relative z-50 lg:hidden border-t border-gray-100 bg-white shadow-2xl overflow-hidden"
+                            transition={{ duration: 0.25, ease: "easeInOut" }}
+                            className="lg:hidden absolute top-full left-0 right-0 z-50 border-t border-gray-100 bg-white shadow-2xl overflow-hidden max-h-[calc(100vh-5rem)] overflow-y-auto"
                         >
                             <div className="px-5 py-6 space-y-3">
                                 {data.navItems.map((item) => {
-                                    const active = isItemActive(item.href);
+                                    const active = activeSection === item.href;
 
                                     return (
                                         <a
