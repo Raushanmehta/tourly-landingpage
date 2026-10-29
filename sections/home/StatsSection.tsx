@@ -79,7 +79,7 @@ export default function StatsSection({ data = site.stats }: StatsSectionProps) {
     const Icon4 = statsIconMap[stat4.icon] || CalendarCheck;
 
     return (
-        <section className="relative w-full min-h-[420px] sm:min-h-[460px] lg:min-h-[500px] flex items-center overflow-hidden py-8 lg:py-12">
+        <section id="stats" className="relative w-full min-h-[420px] sm:min-h-[460px] lg:min-h-[500px] flex items-center overflow-hidden py-8 lg:py-12">
             {/* Background panoramic photography */}
             <div className="absolute inset-0 z-0">
                 <Image
@@ -103,23 +103,23 @@ export default function StatsSection({ data = site.stats }: StatsSectionProps) {
                                 Watch Our <br />
                                 Travel Video
                             </span>
-                            {/* Curved orange arrow */}
+                            {/* Curved ocean cyan arrow */}
                             <svg
                                 width="46"
                                 height="28"
                                 viewBox="0 0 50 30"
                                 fill="none"
-                                className="text-[#f15a24] mt-1 -rotate-3"
+                                className="text-[#38bdf8] mt-1 -rotate-3"
                             >
                                 <path
                                     d="M6 8C18 4 34 8 44 22"
-                                    stroke="#f15a24"
+                                    stroke="#38bdf8"
                                     strokeWidth="2.5"
                                     strokeLinecap="round"
                                 />
                                 <path
                                     d="M38 23L44 22L44 16"
-                                    stroke="#f15a24"
+                                    stroke="#38bdf8"
                                     strokeWidth="2.5"
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
@@ -142,7 +142,7 @@ export default function StatsSection({ data = site.stats }: StatsSectionProps) {
                                 whileTap={{ scale: 0.94 }}
                                 onClick={() => setVideoOpen(true)}
                                 aria-label="Watch Travel Video"
-                                className="relative z-10 w-18 h-18 sm:w-22 sm:h-22 rounded-full bg-gradient-to-r from-[#ea580c] via-[#f15a24] to-[#f97316] text-white flex items-center justify-center shadow-2xl shadow-orange-500/50 cursor-pointer transition-all"
+                                className="relative z-10 w-18 h-18 sm:w-22 sm:h-22 rounded-full bg-gradient-to-r from-[#0284c7] via-[#0ea5e9] to-[#06b6d4] text-white flex items-center justify-center shadow-2xl shadow-sky-500/50 cursor-pointer transition-all"
                             >
                                 <FaPlay className="text-2xl sm:text-3xl ml-1 sm:ml-1.5 text-white drop-shadow-sm" />
                             </motion.button>

@@ -1,1859 +1,625 @@
 {
-    "Tourly": {
-        "templateComponents": {
-            "template-1": {
-                "shared": {
-                    "topbar": "TourlyTopbar1",
-                    "navbar": "TourlyNavbar1",
-                    "footer": "TourlyFooter1"
-                },
-                "pages": {
-                    "home": {
-                        "components": [
-                            {
-                                "key": "hero",
-                                "component": "TourlyHero1"
-                            },
-                            {
-                                "key": "about",
-                                "component": "TourlyAbout1"
-                            },
-                            {
-                                "key": "destinations",
-                                "component": "TourlyDestinations1"
-                            },
-                            {
-                                "key": "stats",
-                                "component": "TourlyStats1"
-                            },
-                            {
-                                "key": "whyChooseUs",
-                                "component": "TourlyWhyChooseUs1"
-                            },
-                            {
-                                "key": "testimonials",
-                                "component": "TourlyTestimonials1"
-                            },
-                            {
-                                "key": "cta",
-                                "component": "TourlyCta1"
-                            }
-                        ]
-                    },
-                    "about": {
-                        "components": [
-                            {
-                                "key": "pageTopSection",
-                                "component": "TourlyPageTop1"
-                            },
-                            {
-                                "key": "about",
-                                "component": "TourlyAbout1"
-                            },
-                            {
-                                "key": "whyChooseUs",
-                                "component": "TourlyWhyChooseUs1"
-                            },
-                            {
-                                "key": "cta",
-                                "component": "TourlyCta1"
-                            }
-                        ]
-                    },
-                    "destinations": {
-                        "components": [
-                            {
-                                "key": "pageTopSection",
-                                "component": "TourlyPageTop1"
-                            },
-                            {
-                                "key": "destinations",
-                                "component": "TourlyDestinations1"
-                            },
-                            {
-                                "key": "cta",
-                                "component": "TourlyCta1"
-                            }
-                        ]
-                    },
-                    "packages": {
-                        "components": [
-                            {
-                                "key": "pageTopSection",
-                                "component": "TourlyPageTop1"
-                            },
-                            {
-                                "key": "packages",
-                                "component": "TourlyPackages1"
-                            },
-                            {
-                                "key": "cta",
-                                "component": "TourlyCta1"
-                            }
-                        ]
-                    },
-                    "gallery": {
-                        "components": [
-                            {
-                                "key": "pageTopSection",
-                                "component": "TourlyPageTop1"
-                            },
-                            {
-                                "key": "gallery",
-                                "component": "TourlyGallery1"
-                            },
-                            {
-                                "key": "cta",
-                                "component": "TourlyCta1"
-                            }
-                        ]
-                    },
-                    "faq": {
-                        "components": [
-                            {
-                                "key": "pageTopSection",
-                                "component": "TourlyPageTop1"
-                            },
-                            {
-                                "key": "faq",
-                                "component": "TourlyFaq1"
-                            },
-                            {
-                                "key": "cta",
-                                "component": "TourlyCta1"
-                            }
-                        ]
-                    },
-                    "contact": {
-                        "components": [
-                            {
-                                "key": "pageTopSection",
-                                "component": "TourlyPageTop1"
-                            },
-                            {
-                                "key": "contact",
-                                "component": "TourlyContact1"
-                            }
-                        ]
-                    },
-                    "enquiryNow": {
-                        "components": [
-                            {
-                                "key": "pageTopSection",
-                                "component": "TourlyPageTop1"
-                            },
-                            {
-                                "key": "enquiryNow",
-                                "component": "TourlyEnquiryNow1"
-                            }
-                        ]
-                    }
-                }
-            }
+  "Tourly": {
+    "templateComponents": {
+      "template-1": {
+        "shared": {
+          "topbar": "TourlyTopbar1",
+          "navbar": "TourlyNavbar1",
+          "footer": "TourlyFooter1"
         },
-        "sections": {
-            "topbar": {
-                "variants": {
-                    "TourlyTopbar1": {
-                        "phone": "+1 000000000",
-                        "phoneHref": "tel:+1000000000",
-                        "email": "info@xyz.com",
-                        "emailHref": "mailto:info@xyz.com",
-                        "address": "3170 Rosewood Lane Unit 200, Beverly Hills, CA 90210",
-                        "socialLinks": [
-                            {
-                                "name": "Facebook",
-                                "href": "https://facebook.com",
-                                "icon": "facebook"
-                            },
-                            {
-                                "name": "X",
-                                "href": "https://x.com",
-                                "icon": "twitter"
-                            },
-                            {
-                                "name": "Instagram",
-                                "href": "https://instagram.com",
-                                "icon": "instagram"
-                            },
-                            {
-                                "name": "YouTube",
-                                "href": "https://youtube.com",
-                                "icon": "youtube"
-                            }
-                        ]
-                    }
-                }
-            },
-            "navbar": {
-                "variants": {
-                    "TourlyNavbar1": {
-                        "logo": {
-                            "src": "/logo/logo-black.webp",
-                            "alt": "Tourly Logo",
-                            "width": 220,
-                            "height": 65
-                        },
-                        "navItems": [
-                            {
-                                "name": "Home",
-                                "href": "/"
-                            },
-                            {
-                                "name": "About Us",
-                                "href": "/about"
-                            },
-                            {
-                                "name": "Tour Packages",
-                                "href": "/packages"
-                            },
-                            {
-                                "name": "Destinations",
-                                "href": "/destinations"
-                            },
-                            {
-                                "name": "Gallery",
-                                "href": "/gallery"
-                            },
-                            {
-                                "name": "Faq",
-                                "href": "/faq"
-                            },
-                            {
-                                "name": "Contact Us",
-                                "href": "/contact"
-                            }
-                        ],
-                        "ctaButton": {
-                            "text": "Enquiry Now",
-                            "href": "/enquiry-now"
-                        }
-                    }
-                }
-            },
-            "footer": {
-                "variants": {
-                    "TourlyFooter1": {
-                        "logo": {
-                            "src": "/logo/logo-white.webp",
-                            "alt": "Tourly Logo",
-                            "width": 230,
-                            "height": 68
-                        },
-                        "bgImage": "/images/footer-bg.webp",
-                        "description": "At Tourly, we create memorable travel experiences with carefully curated packages, personalized service and dedicated support for explorers like you.",
-                        "socialLinks": [
-                            {
-                                "name": "Facebook",
-                                "href": "https://facebook.com",
-                                "icon": "facebook"
-                            },
-                            {
-                                "name": "Instagram",
-                                "href": "https://instagram.com",
-                                "icon": "instagram"
-                            },
-                            {
-                                "name": "YouTube",
-                                "href": "https://youtube.com",
-                                "icon": "youtube"
-                            },
-                            {
-                                "name": "LinkedIn",
-                                "href": "https://linkedin.com",
-                                "icon": "linkedin"
-                            }
-                        ],
-                        "quickLinksTitle": "Quick Links",
-                        "quickLinks": [
-                            {
-                                "name": "Home",
-                                "href": "/"
-                            },
-                            {
-                                "name": "About Us",
-                                "href": "/about"
-                            },
-                            {
-                                "name": "Our Packages",
-                                "href": "/packages"
-                            },
-                            {
-                                "name": "Destinations",
-                                "href": "/destinations"
-                            },
-                            {
-                                "name": "Gallery",
-                                "href": "/gallery"
-                            },
-                            {
-                                "name": "FAQ",
-                                "href": "/faq"
-                            },
-                            {
-                                "name": "Contact Us",
-                                "href": "/contact"
-                            }
-                        ],
-                        "destinationsTitle": "Popular Destinations",
-                        "destinationLinks": [
-                            {
-                                "name": "India Tours",
-                                "href": "/destinations"
-                            },
-                            {
-                                "name": "International Tours",
-                                "href": "/destinations"
-                            },
-                            {
-                                "name": "Honeymoon Packages",
-                                "href": "/destinations"
-                            },
-                            {
-                                "name": "Adventure Tours",
-                                "href": "/destinations"
-                            },
-                            {
-                                "name": "Family Tours",
-                                "href": "/destinations"
-                            },
-                            {
-                                "name": "Group Tours",
-                                "href": "/destinations"
-                            },
-                            {
-                                "name": "Custom Packages",
-                                "href": "/destinations"
-                            }
-                        ],
-                        "contactTitle": "Contact Information",
-                        "phone": "+1 000000000",
-                        "phoneHref": "tel:+1000000000",
-                        "email": "info@xyz.com",
-                        "emailHref": "mailto:info@xyz.com",
-                        "address": "3170 Rosewood Lane Unit 200, Beverly Hills, CA 90210",
-                        "copyright": "© 2026 Tourly. All Rights Reserved. Powered by Lestow"
-                    }
-                }
-            },
-            "hero": {
-                "variants": {
-                    "TourlyHero1": {
-                        "slides": [
-                            {
-                                "id": 1,
-                                "image": "/images/hero-1.webp",
-                                "title": "Travel and see the world\nof your dreams",
-                                "description": "Welcome to our Vitour website! We are a professional and reliable tours company that offers a wide range of are many variations of passages."
-                            },
-                            {
-                                "id": 2,
-                                "image": "/images/hero-2.webp",
-                                "title": "Explore Nature's Majesty\nin Pure Comfort",
-                                "description": "Immerse yourself in breathtaking alpine landscapes, crystal pristine waters, and unforgettable guided trekking expeditions."
-                            },
-                            {
-                                "id": 3,
-                                "image": "/images/hero-3.webp",
-                                "title": "Create Memories That\nLast a Lifetime",
-                                "description": "Witness magical hot air balloon sunrises and ancient wonderlands with our premier custom holiday vacation packages."
-                            },
-                            {
-                                "id": 4,
-                                "image": "/images/hero-4.webp",
-                                "title": "Tropical Paradise\nOverwater Getaways",
-                                "description": "Relax in serene turquoise lagoons, vibrant coral reefs, and luxury overwater villas designed for pure bliss."
-                            },
-                            {
-                                "id": 5,
-                                "image": "/images/hero-5.webp",
-                                "title": "Majestic Alpine Peaks\n& Crystal Lakes",
-                                "description": "Breathe the crisp mountain air and discover serene glacial lakes nestled within the world's most iconic summits."
-                            },
-                            {
-                                "id": 6,
-                                "image": "/images/hero-6.webp",
-                                "title": "Timeless Coastal Charm\nAlong the Riviera",
-                                "description": "Soak in romantic cliffside vistas, colourful Mediterranean villages, and unforgettable sunsets on the ocean."
-                            }
-                        ]
-                    }
-                }
-            },
-            "about": {
-                "variants": {
-                    "TourlyAbout1": {
-                        "subtitle": "ABOUT US",
-                        "title": "About Us",
-                        "lead": "Top Tour Operators and Travel Agency. We offering in total 793 tours and holidays through-out the world. Combined we have received 1532 customer reviews.",
-                        "description": "Travel has helped us to understand the meaning of life and it has helped us become better people. Each time we travel, we see the world with new eyes.Travel has helped us to understand the meaning of life and it has helped us become better people. Each time we travel, we see the world with new eyes.Travel has helped us to understand the meaning of life and it has helped us.",
-                        "features": [
-                            {
-                                "icon": "shieldCheck",
-                                "title": "Safety Travel System"
-                            },
-                            {
-                                "icon": "handCoins",
-                                "title": "Budget-Friendly Tour"
-                            },
-                            {
-                                "icon": "headset",
-                                "title": "24/7 Customer Support"
-                            },
-                            {
-                                "icon": "clock",
-                                "title": "Expert Trip Planning"
-                            },
-                            {
-                                "icon": "radio",
-                                "title": "Fast Communication"
-                            },
-                            {
-                                "icon": "thumbsUp",
-                                "title": "Right Solution & Guide"
-                            }
-                        ],
-                        "contactButton": {
-                            "text": "Contact Us",
-                            "href": "/contact"
-                        },
-                        "readMoreButton": {
-                            "text": "Read More",
-                            "href": "/about"
-                        }
-                    }
-                }
-            },
-            "destinations": {
-                "variants": {
-                    "TourlyDestinations1": {
-                        "subtitle": "POPULAR DESTINATIONS",
-                        "titlePrefix": "Explore ",
-                        "titleHighlight": "Popular Destinations",
-                        "description": "Discover breathtaking destinations worldwide with our curated holiday packages, tailored for unforgettable experiences.",
-                        "destinationsList": [
-                            {
-                                "id": 1,
-                                "title": "Bali, Indonesia",
-                                "packages": "25+ Packages",
-                                "price": "$1200",
-                                "description": "Pristine beaches, ancient temples and vibrant culture make Bali a dream destination.",
-                                "image": "/images/destination-bali.webp",
-                                "href": "/packages/bali-beach-holidays",
-                                "variant": "grid"
-                            },
-                            {
-                                "id": 2,
-                                "title": "Maldives",
-                                "packages": "18+ Packages",
-                                "price": "$1500",
-                                "description": "Crystal clear waters, luxury resorts and unforgettable island experiences.",
-                                "image": "/images/destination-maldives.webp",
-                                "href": "/packages/romantic-maldives-escape",
-                                "variant": "grid"
-                            },
-                            {
-                                "id": 3,
-                                "title": "Thailand",
-                                "packages": "30+ Packages",
-                                "price": "$1100",
-                                "description": "Stunning beaches, bustling cities and rich cultural heritage await you in Thailand.",
-                                "image": "/images/destination-thailand.webp",
-                                "href": "/packages/thailand-island-tour",
-                                "variant": "grid"
-                            },
-                            {
-                                "id": 4,
-                                "title": "Singapore",
-                                "packages": "15+ Packages",
-                                "price": "$700",
-                                "description": "A modern city with iconic attractions, shopping and world-class experiences.",
-                                "image": "/images/why-us-1.webp",
-                                "href": "/packages",
-                                "variant": "grid"
-                            },
-                            {
-                                "id": 5,
-                                "title": "Dubai, UAE",
-                                "packages": "28+ Packages",
-                                "price": "$1800",
-                                "description": "Experience luxury, modern architecture and thrilling desert adventures.",
-                                "image": "/images/why-us-3.webp",
-                                "href": "/packages/dubai-family-extravaganza",
-                                "variant": "grid"
-                            },
-                            {
-                                "id": 6,
-                                "title": "Europe",
-                                "packages": "40+ Packages",
-                                "price": "$1800",
-                                "description": "Explore iconic cities, historic landmarks and diverse cultures across Europe.",
-                                "image": "/images/destination-switzerland.webp",
-                                "href": "/packages/europe-dream-tour",
-                                "variant": "grid"
-                            },
-                            {
-                                "id": 7,
-                                "title": "Kashmir, India",
-                                "packages": "20+ Packages",
-                                "price": "$700",
-                                "description": "Paradise on Earth with scenic valleys, shikara rides and snow clad peaks.",
-                                "image": "/images/hero-2.webp",
-                                "href": "/packages/kashmir-valley-tour",
-                                "variant": "grid"
-                            },
-                            {
-                                "id": 8,
-                                "title": "Turkey",
-                                "packages": "22+ Packages",
-                                "price": "$1200",
-                                "description": "Where East meets West with rich history, stunning landscapes and vibrant bazaars.",
-                                "image": "/images/destination-turkey.webp",
-                                "href": "/packages",
-                                "variant": "grid"
-                            }
-                        ]
-                    }
-                }
-            },
-            "stats": {
-                "variants": {
-                    "TourlyStats1": {
-                        "bgImage": "/images/stats-bg.webp",
-                        "stats": [
-                            {
-                                "id": 1,
-                                "target": 20,
-                                "suffix": "K+",
-                                "label": "Tours Success",
-                                "icon": "trendingUp"
-                            },
-                            {
-                                "id": 2,
-                                "target": 3700,
-                                "suffix": "+",
-                                "label": "Happy Traveler",
-                                "icon": "users"
-                            },
-                            {
-                                "id": 3,
-                                "target": 4461,
-                                "suffix": "+",
-                                "label": "Awards Winning",
-                                "icon": "award"
-                            },
-                            {
-                                "id": 4,
-                                "target": 22,
-                                "suffix": "+",
-                                "label": "Our Experience",
-                                "icon": "calendarCheck"
-                            }
-                        ]
-                    }
-                }
-            },
-            "whyChooseUs": {
-                "variants": {
-                    "TourlyWhyChooseUs1": {
-                        "subtitle": "WHY CHOOSE US",
-                        "title": "Great Opportunity for Adventure & Travel",
-                        "description": "With over a decade of excellence in luxury and budget travel, we make sure every journey you take is memorable, seamless, and completely tailored to your wishes.",
-                        "images": {
-                            "main": "/images/why-us-1.webp",
-                            "topRight": "/images/why-us-2.webp",
-                            "bottomRight": "/images/why-us-3.webp"
-                        },
-                        "features": [
-                            {
-                                "icon": "shieldCheck",
-                                "title": "Safety First Always",
-                                "description": "Your safety is our top priority with trusted partners and verified services."
-                            },
-                            {
-                                "icon": "coins",
-                                "title": "Best Price Guarantee",
-                                "description": "Get the most value for your money with affordable and transparent pricing."
-                            },
-                            {
-                                "icon": "compass",
-                                "title": "Expert Trip Planning",
-                                "description": "Customized itineraries to match your interests, budget and travel style."
-                            },
-                            {
-                                "icon": "headset",
-                                "title": "24/7 Customer Support",
-                                "description": "Our travel experts are always available to assist you, anytime, anywhere."
-                            }
-                        ],
-                        "ctaButton": {
-                            "text": "Explore Tours",
-                            "href": "/packages"
-                        }
-                    }
-                }
-            },
-            "testimonials": {
-                "variants": {
-                    "TourlyTestimonials1": {
-                        "subtitle": "TESTIMONIALS",
-                        "titlePrefix": "What Our ",
-                        "titleHighlight": "Travelers Say",
-                        "description": "Real stories from real travelers who explored the world with us and created unforgettable memories.",
-                        "items": [
-                            {
-                                "id": 1,
-                                "name": "Priya Sharma",
-                                "location": "New Delhi, India",
-                                "rating": 5,
-                                "text": "The trip was perfectly organized and everything went smoothly. Amazing destinations, great support and unforgettable memories. Highly recommended!",
-                                "avatar": "/images/testimonial-1.webp"
-                            },
-                            {
-                                "id": 2,
-                                "name": "Rahul Mehta",
-                                "location": "Mumbai, India",
-                                "rating": 5,
-                                "text": "Excellent service and well-planned itinerary. The team was always there to help and made our vacation truly special. Will definitely travel again!",
-                                "avatar": "/images/testimonial-2.webp"
-                            },
-                            {
-                                "id": 3,
-                                "name": "Sneha Verma",
-                                "location": "Bangalore, India",
-                                "rating": 5,
-                                "text": "Beautiful destinations, great arrangements and very professional team. It was a hassle-free and memorable experience for us. Thank you!",
-                                "avatar": "/images/testimonial-3.webp"
-                            },
-                            {
-                                "id": 4,
-                                "name": "Arjun Kapoor",
-                                "location": "Pune, India",
-                                "rating": 5,
-                                "text": "Exceptional tour guide and 24/7 customer assistance. Every single detail from flight bookings to luxury hotels was handled seamlessly. Best vacation ever!",
-                                "avatar": "/images/testimonial-2.webp"
-                            }
-                        ]
-                    }
-                }
-            },
-            "cta": {
-                "variants": {
-                    "TourlyCta1": {
-                        "badge": "PLAN YOUR NEXT JOURNEY",
-                        "titlePrefix": "Ready to ",
-                        "titleHighlight": "Explore the World?",
-                        "bgImage": "/images/cta-bg.webp",
-                        "ctaButton": {
-                            "text": "Enquiry Now",
-                            "href": "/enquiry-now"
-                        }
-                    }
-                }
-            },
-            "contact": {
-                "variants": {
-                    "TourlyContact1": {
-                        "subtitle": "GET IN TOUCH",
-                        "title": "We'd Love To Hear From You",
-                        "description": "Have questions, special tour requests or need help planning your next vacation? Contact our friendly travel specialists today.",
-                        "cards": {
-                            "address": {
-                                "title": "Office Address",
-                                "line1": "3170 Rosewood Lane Unit 200,",
-                                "line2": "Beverly Hills, CA 90210",
-                                "icon": "mapMarkerAlt"
-                            },
-                            "phone": {
-                                "title": "Call Us",
-                                "number": "+1 000000000",
-                                "hours": "Mon - Sat (9:00 AM - 7:00 PM)",
-                                "icon": "phoneAlt"
-                            },
-                            "email": {
-                                "title": "Email Us",
-                                "address": "info@xyz.com",
-                                "note": "We respond within 24 hours",
-                                "icon": "envelope"
-                            }
-                        },
-                        "form": {
-                            "title": "Send Us a Message",
-                            "subtitle": "Fill in the details below and we will get back to you shortly.",
-                            "buttonText": "Send Message",
-                            "sideImage": "/images/why-us-3.webp",
-                            "sideTagline": "Explore the unseen with Tourly"
-                        },
-                        "map": {
-                            "title": "Tourly Office Location - Beverly Hills",
-                            "embedUrl": "https://maps.google.com/maps?q=3170%20Rosewood%20Lane%20Unit%20200%2C%20Beverly%20Hills%2C%20CA%2090210&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                        }
-                    }
-                }
-            },
-            "enquiryNow": {
-                "variants": {
-                    "TourlyEnquiryNow1": {
-                        "subtitle": "ENQUIRY NOW",
-                        "titlePrefix": "Plan Your Dream ",
-                        "titleHighlight": "Vacation",
-                        "description": "Fill out the form below and our travel experts will get in touch with you with the best packages, customized options and special offers for your next trip.",
-                        "form": {
-                            "title": "Trip Enquiry Form",
-                            "subtitle": "Tell us about your travel plans and get a customized quote.",
-                            "buttonText": "Submit Enquiry",
-                            "privacyNotice": "Your personal details are safe with us.",
-                            "sideImage": "/images/enquiry-resort.webp",
-                            "sideTitle": "Exclusive Holiday Deals",
-                            "sideDescription": "Get up to 25% early bird discount on all international summer holiday packages.",
-                            "destinations": [
-                                "Bali, Indonesia",
-                                "Maldives",
-                                "Thailand",
-                                "Switzerland",
-                                "Dubai, UAE",
-                                "Kashmir, India",
-                                "Singapore",
-                                "Europe Grand Tour",
-                                "Other Destination"
-                            ]
-                        }
-                    }
-                }
-            },
-            "faq": {
-                "variants": {
-                    "TourlyFaq1": {
-                        "subtitle": "FREQUENTLY ASKED QUESTIONS",
-                        "titlePrefix": "Everything You ",
-                        "titleHighlight": "Need to Know",
-                        "description": "Find quick answers to common questions about tour booking, payments, cancellations, and travel requirements.",
-                        "leftFaqs": [
-                            {
-                                "id": 1,
-                                "question": "What types of tour packages do you offer?",
-                                "answer": "We offer a wide range of tour packages including domestic tours, international tours, honeymoon packages, family vacations, adventure tours, group tours and customized travel packages to suit your preferences and budget."
-                            },
-                            {
-                                "id": 2,
-                                "question": "How can I book a tour with Tourly?",
-                                "answer": "You can easily book a tour online through our website by selecting your destination, choosing your preferred dates, and submitting an enquiry. Alternatively, you can call our travel consultants directly."
-                            },
-                            {
-                                "id": 3,
-                                "question": "What payment methods do you accept?",
-                                "answer": "We accept all major credit cards, debit cards, net banking, UPI, wire transfers, and popular digital wallets for secure and hassle-free transactions."
-                            },
-                            {
-                                "id": 4,
-                                "question": "Can I customize my travel package?",
-                                "answer": "Yes, absolutely! We specialize in tailoring custom holiday itineraries based on your preferred travel dates, hotel preferences, budget, and specific activities."
-                            },
-                            {
-                                "id": 5,
-                                "question": "Do you provide international tour packages?",
-                                "answer": "Yes, we offer comprehensive international tour packages to popular destinations including Europe, Dubai, Maldives, Bali, Thailand, Singapore, and more."
-                            },
-                            {
-                                "id": 6,
-                                "question": "What is included in a tour package?",
-                                "answer": "Our standard packages typically include hotel accommodations, daily breakfast, airport transfers, guided sightseeing, and select entrance fees. Specific inclusions vary per package."
-                            },
-                            {
-                                "id": 7,
-                                "question": "Are flights and hotels included in the package?",
-                                "answer": "Yes, our packages can be booked with or without flights. Premium 3-star, 4-star, and 5-star hotel stays with daily breakfast are standard inclusions."
-                            },
-                            {
-                                "id": 8,
-                                "question": "Do you offer honeymoon packages?",
-                                "answer": "Yes! We design special romantic honeymoon packages featuring candle-lit dinners, private villas, spa vouchers, and personalized honeymoon surprises."
-                            },
-                            {
-                                "id": 9,
-                                "question": "Can I book a group tour for a large family or company?",
-                                "answer": "Yes, we provide specialized group tours and corporate retreats for families, friend groups, and corporate teams with attractive group discounts."
-                            }
-                        ],
-                        "rightFaqs": [
-                            {
-                                "id": 10,
-                                "question": "What is your cancellation policy?",
-                                "answer": "We provide flexible cancellation policies. Depending on the time of cancellation prior to departure, you may receive a full or partial refund minus nominal processing fees."
-                            },
-                            {
-                                "id": 11,
-                                "question": "Will I get a travel visa assistance?",
-                                "answer": "Yes, our visa assistance team will guide you through document preparation, appointment scheduling, and visa submission for all international destinations."
-                            },
-                            {
-                                "id": 12,
-                                "question": "Is travel insurance included?",
-                                "answer": "Comprehensive travel insurance can be bundled with any package covering medical emergencies, trip cancellations, lost baggage, and flight delays."
-                            },
-                            {
-                                "id": 13,
-                                "question": "Can I make changes to my booking after confirmation?",
-                                "answer": "Yes, date modifications and itinerary adjustments can be requested subject to hotel and airline availability and applicable modification fees."
-                            },
-                            {
-                                "id": 14,
-                                "question": "What documents are required for international travel?",
-                                "answer": "You will need a valid passport with at least 6 months validity from departure date, valid travel visas, flight tickets, and hotel reservation vouchers."
-                            },
-                            {
-                                "id": 15,
-                                "question": "How do I receive my booking confirmation?",
-                                "answer": "Once payment is verified, you will immediately receive a digital booking confirmation receipt and detailed travel vouchers via email and WhatsApp."
-                            },
-                            {
-                                "id": 16,
-                                "question": "Do you offer airport pickup and drop services?",
-                                "answer": "Yes, comfortable and private air-conditioned airport pickup and drop transfers are included in almost all of our curated vacation packages."
-                            },
-                            {
-                                "id": 17,
-                                "question": "Are there any hidden charges?",
-                                "answer": "No, we believe in 100% pricing transparency. All taxes, government levies, and standard package inclusions are clearly outlined upfront."
-                            }
-                        ]
-                    }
-                }
-            },
-            "gallery": {
-                "variants": {
-                    "TourlyGallery1": {
-                        "photoSubtitle": "OUR GALLERY",
-                        "photoTitlePrefix": "Moments From Our ",
-                        "photoTitleHighlight": "Journeys",
-                        "photoDescription": "Explore beautiful destinations, memorable experiences and real moments from our travelers around the world.",
-                        "photos": [
-                            {
-                                "id": 1,
-                                "title": "Tropical Beach Paradise",
-                                "location": "Maldives",
-                                "image": "/images/destination-maldives.webp"
-                            },
-                            {
-                                "id": 2,
-                                "title": "Overwater Villas",
-                                "location": "Bora Bora",
-                                "image": "/images/enquiry-resort.webp"
-                            },
-                            {
-                                "id": 3,
-                                "title": "Santorini Sunset",
-                                "location": "Greece",
-                                "image": "/images/destination-turkey.webp"
-                            },
-                            {
-                                "id": 4,
-                                "title": "Alpine Turquoise Lake",
-                                "location": "Switzerland",
-                                "image": "/images/destination-switzerland.webp"
-                            },
-                            {
-                                "id": 5,
-                                "title": "Coastline Paragliding",
-                                "location": "Oludeniz",
-                                "image": "/images/hero-2.webp"
-                            },
-                            {
-                                "id": 6,
-                                "title": "Emerald Karst Bay",
-                                "location": "Phuket, Thailand",
-                                "image": "/images/destination-thailand.webp"
-                            },
-                            {
-                                "id": 7,
-                                "title": "Breathtaking Ocean Vista",
-                                "location": "Krabi",
-                                "image": "/images/why-us-3.webp"
-                            },
-                            {
-                                "id": 8,
-                                "title": "Lakeside Royal Palace",
-                                "location": "Udaipur",
-                                "image": "/images/why-us-1.webp"
-                            },
-                            {
-                                "id": 9,
-                                "title": "Snowy Mountain Summit",
-                                "location": "Alps",
-                                "image": "/images/hero-2.webp"
-                            },
-                            {
-                                "id": 10,
-                                "title": "Jungle Cascade Waterfall",
-                                "location": "Bali",
-                                "image": "/images/destination-bali.webp"
-                            },
-                            {
-                                "id": 11,
-                                "title": "Sunset Infinity Pool",
-                                "location": "Phuket",
-                                "image": "/images/stats-bg.webp"
-                            },
-                            {
-                                "id": 12,
-                                "title": "Hot Air Balloons",
-                                "location": "Cappadocia",
-                                "image": "/images/hero-3.webp"
-                            },
-                            {
-                                "id": 13,
-                                "title": "Ulun Danu Water Temple",
-                                "location": "Bali",
-                                "image": "/images/destination-bali.webp"
-                            },
-                            {
-                                "id": 14,
-                                "title": "Tropical Island Cove",
-                                "location": "Thailand",
-                                "image": "/images/cta-bg.webp"
-                            },
-                            {
-                                "id": 15,
-                                "title": "European River Heritage",
-                                "location": "Budapest",
-                                "image": "/images/destination-switzerland.webp"
-                            },
-                            {
-                                "id": 16,
-                                "title": "Cliffside Boardwalk",
-                                "location": "Australia",
-                                "image": "/images/destination-thailand.webp"
-                            }
-                        ],
-                        "videoSubtitle": "VIDEO GALLERY",
-                        "videoTitlePrefix": "Watch Our ",
-                        "videoTitleHighlight": "Travel Stories",
-                        "videoDescription": "Experience the magic of traveling through the lens of our travelers and journey cinematics.",
-                        "videos": [
-                            {
-                                "id": 1,
-                                "title": "Maldives Travel Experience",
-                                "duration": "02:45",
-                                "thumbnail": "/images/enquiry-resort.webp"
-                            },
-                            {
-                                "id": 2,
-                                "title": "Santorini Greece Tour",
-                                "duration": "03:20",
-                                "thumbnail": "/images/destination-turkey.webp"
-                            },
-                            {
-                                "id": 3,
-                                "title": "Swiss Alps Adventure",
-                                "duration": "04:15",
-                                "thumbnail": "/images/destination-switzerland.webp"
-                            },
-                            {
-                                "id": 4,
-                                "title": "Bali Travel Guide",
-                                "duration": "03:10",
-                                "thumbnail": "/images/destination-bali.webp"
-                            },
-                            {
-                                "id": 5,
-                                "title": "Thailand Island Tour",
-                                "duration": "02:58",
-                                "thumbnail": "/images/destination-thailand.webp"
-                            },
-                            {
-                                "id": 6,
-                                "title": "Cappadocia Hot Air Balloon",
-                                "duration": "03:42",
-                                "thumbnail": "/images/hero-3.webp"
-                            },
-                            {
-                                "id": 7,
-                                "title": "Andaman Beach Life",
-                                "duration": "02:30",
-                                "thumbnail": "/images/stats-bg.webp"
-                            },
-                            {
-                                "id": 8,
-                                "title": "Europe Travel Highlights",
-                                "duration": "04:05",
-                                "thumbnail": "/images/destination-switzerland.webp"
-                            },
-                            {
-                                "id": 9,
-                                "title": "African Safari Experience",
-                                "duration": "03:55",
-                                "thumbnail": "/images/why-us-2.webp"
-                            },
-                            {
-                                "id": 10,
-                                "title": "Nature & Waterfalls",
-                                "duration": "02:48",
-                                "thumbnail": "/images/destination-bali.webp"
-                            },
-                            {
-                                "id": 11,
-                                "title": "Dubai City Tour",
-                                "duration": "03:18",
-                                "thumbnail": "/images/why-us-1.webp"
-                            },
-                            {
-                                "id": 12,
-                                "title": "Japan Travel Vlog",
-                                "duration": "03:27",
-                                "thumbnail": "/images/why-us-2.webp"
-                            },
-                            {
-                                "id": 13,
-                                "title": "Machu Picchu Expedition",
-                                "duration": "04:12",
-                                "thumbnail": "/images/hero-2.webp"
-                            },
-                            {
-                                "id": 14,
-                                "title": "Tropical Sunset Views",
-                                "duration": "02:36",
-                                "thumbnail": "/images/cta-bg.webp"
-                            },
-                            {
-                                "id": 15,
-                                "title": "Iceland Northern Lights",
-                                "duration": "03:50",
-                                "thumbnail": "/images/hero-2.webp"
-                            },
-                            {
-                                "id": 16,
-                                "title": "Australia Road Trip",
-                                "duration": "03:14",
-                                "thumbnail": "/images/destination-maldives.webp"
-                            }
-                        ]
-                    }
-                }
-            },
-            "packages": {
-                "variants": {
-                    "TourlyPackages1": {
-                        "subtitle": "OUR PACKAGES",
-                        "titlePrefix": "Explore Popular ",
-                        "titleHighlight": "Tour Packages",
-                        "description": "Discover handcrafted travel itineraries designed for comfort, luxury, and unmatched adventure.",
-                        "categories": [
-                            {
-                                "id": 1,
-                                "name": "All Packages"
-                            },
-                            {
-                                "id": 2,
-                                "name": "Honeymoon"
-                            },
-                            {
-                                "id": 3,
-                                "name": "Family"
-                            },
-                            {
-                                "id": 4,
-                                "name": "Adventure"
-                            },
-                            {
-                                "id": 5,
-                                "name": "International"
-                            }
-                        ],
-                        "packagesList": [
-                            {
-                                "id": 1,
-                                "categoryId": 1,
-                                "slug": "bali-beach-holidays",
-                                "title": "Bali Beach Holidays",
-                                "tag": "Popular",
-                                "location": "Bali, Indonesia",
-                                "duration": "6 Days / 5 Nights",
-                                "people": "2+ People",
-                                "groupSize": "2+ People",
-                                "transportType": "flight",
-                                "transportText": "Flight Included",
-                                "transport": "Flight Included",
-                                "description": "Relax on pristine beaches, explore ancient temples and enjoy the vibrant culture of Bali.",
-                                "shortDescription": "Experience the perfect blend of pristine beaches, rich culture and stunning landscapes in this unforgettable Bali tour package.",
-                                "price": "₹ 45,000",
-                                "priceLabel": "Starting From",
-                                "priceUnit": "per person",
-                                "image": "/images/destination-bali.webp",
-                                "heroImage": "/images/destination-thailand.webp",
-                                "rating": 4.8,
-                                "reviewsCount": "(120+ Reviews)",
-                                "accommodation": "3 Star Hotel",
-                                "enquiryButton": {
-                                    "text": "Enquiry Now",
-                                    "href": "/enquiry-now"
-                                },
-                                "overview": {
-                                    "title": "Package Overview",
-                                    "description": "Bali, the Island of Gods, Discover majestic cliffside sanctuaries, unwind across sun-kissed coastlines, savor authentic local delicacies, and create unforgettable tropical holiday memories with our expert tour guides. is a dream destination known for its beautiful beaches, ancient temples, vibrant culture and breathtaking natural beauty. This 5 days / 4 nights package takes you through the best of Bali, including popular attractions, water activities, cultural experiences and leisure time to explore at your own pace. Discover majestic cliffside sanctuaries, unwind across sun-kissed coastlines, savor authentic local delicacies, and create unforgettable tropical holiday memories with our expert tour guides.",
-                                    "image": "/images/destination-bali.webp"
-                                },
-                                "highlightsTitle": "Highlights",
-                                "highlights": [
-                                    {
-                                        "icon": "umbrellaBeach",
-                                        "title": "Beautiful Beaches",
-                                        "subtitle": "Kuta, Seminyak & Nusa Dua"
-                                    },
-                                    {
-                                        "icon": "buildingLibrary",
-                                        "title": "Famous Temples",
-                                        "subtitle": "Tanah Lot & Uluwatu"
-                                    },
-                                    {
-                                        "icon": "waterOutline",
-                                        "title": "Water Activities",
-                                        "subtitle": "Snorkeling & Island Tour"
-                                    },
-                                    {
-                                        "icon": "mountain",
-                                        "title": "Scenic Landscapes",
-                                        "subtitle": "Rice Terraces & Volcano Views"
-                                    },
-                                    {
-                                        "icon": "utensils",
-                                        "title": "Local Cuisine",
-                                        "subtitle": "Experience Balinese Food"
-                                    },
-                                    {
-                                        "icon": "camera",
-                                        "title": "Sightseeing",
-                                        "subtitle": "Top Attractions & Hidden Gems"
-                                    }
-                                ],
-                                "itineraryTitle": "Detailed Itinerary",
-                                "itinerary": [
-                                    {
-                                        "day": "Day 1",
-                                        "title": "Arrival in Bali – Airport Welcome & Hotel Check-in",
-                                        "desc": "Arrive at Ngurah Rai International Airport, meet our representative and transfer to hotel. Check-in and relax. Evening free for leisure or explore nearby beach. Stroll along the sun-drenched sands of Kuta, witness a captivating Indian Ocean sunset, indulge in refreshing welcome tropical mocktails, and sample mouthwatering Balinese seafood at vibrant beachside cafes.",
-                                        "image": "/images/hero-1.webp"
-                                    },
-                                    {
-                                        "day": "Day 2",
-                                        "title": "Full Day Kintamani Volcano & Rice Terraces Tour",
-                                        "desc": "After breakfast, visit Kintamani Volcano, enjoy stunning views of Mount Batur and Lake Batur. Explore Tegalalang Rice Terraces and traditional villages. Return to hotel in the evening. Experience the authentic atmosphere of sacred Tirta Empul spring temple, capture picture-perfect moments at lush emerald slopes, and enjoy a scenic hillside coffee plantation tasting tour.",
-                                        "image": "/images/destination-bali.webp"
-                                    },
-                                    {
-                                        "day": "Day 3",
-                                        "title": "Uluwatu Cliff Temple & Sunset Kecak Tour",
-                                        "desc": "Visit the majestic Uluwatu Temple, enjoy stunning cliff views and witness a beautiful sunset. Optional Kecak dance performance in the evening. Marvel at dramatic coastal limestone cliffs towering over crashing surf, wander along ancient paved pathways, and conclude your evening with a candlelit fresh seafood dinner right on Jimbaran Beach.",
-                                        "image": "/images/why-us-3.webp"
-                                    },
-                                    {
-                                        "day": "Day 4",
-                                        "title": "Tropical Island Excursion & Water Sports",
-                                        "desc": "Enjoy exciting water sports activities like snorkeling, banana boat ride and visit Nusa Penida or Nusa Lembongan Island. Discover vibrant coral reefs teeming with exotic marine wildlife, take an exhilarating speed boat ride, snap photographs at iconic Kelingking Beach, and swim in turquoise tidal lagoons.",
-                                        "image": "/images/destination-thailand.webp"
-                                    },
-                                    {
-                                        "day": "Day 5",
-                                        "title": "Souvenir Shopping & Airport Departure",
-                                        "desc": "After breakfast, check-out from hotel and transfer to the airport for your onward journey with beautiful memories. Enjoy leisurely last-minute souvenir shopping at local handicraft art markets, pick up aromatic spices and handcrafted wood carvings, and take a smooth private transfer to the departure terminal.",
-                                        "image": "/images/cta-bg.webp"
-                                    }
-                                ],
-                                "inclusionsTitle": "Inclusions",
-                                "inclusions": [
-                                    "Return flight tickets (as per package)",
-                                    "4 nights accommodation in 3-star hotel",
-                                    "Daily breakfast at hotel",
-                                    "Airport transfers and sightseeing by private vehicle",
-                                    "All taxes and service charges"
-                                ],
-                                "exclusionsTitle": "Exclusions",
-                                "exclusions": [
-                                    "Personal expenses (shopping, tips, etc.)",
-                                    "Lunch and dinner (unless specified)",
-                                    "Travel Insurance",
-                                    "Optional activities and entry tickets",
-                                    "Anything not mentioned in inclusions"
-                                ]
-                            },
-                            {
-                                "id": 2,
-                                "categoryId": 1,
-                                "slug": "kashmir-valley-tour",
-                                "title": "Kashmir Valley Tour",
-                                "tag": "Adventure",
-                                "location": "Srinagar, Gulmarg, Pahalgam",
-                                "duration": "5 Days / 4 Nights",
-                                "people": "2+ People",
-                                "groupSize": "2+ People",
-                                "transportType": "transport",
-                                "transportText": "Transport Included",
-                                "transport": "Transport Included",
-                                "description": "Experience the breathtaking beauty of Kashmir with snow-capped mountains and serene lakes.",
-                                "shortDescription": "Explore Kashmir paradise on Earth with shikara rides on Dal Lake, snow meadows of Gulmarg, and scenic pine valleys of Pahalgam.",
-                                "price": "₹ 32,000",
-                                "priceLabel": "Starting From",
-                                "priceUnit": "per person",
-                                "image": "/images/hero-2.webp",
-                                "heroImage": "/images/hero-2.webp",
-                                "rating": 4.9,
-                                "reviewsCount": "(95+ Reviews)",
-                                "accommodation": "Houseboat & 3 Star Hotel",
-                                "enquiryButton": {
-                                    "text": "Enquiry Now",
-                                    "href": "/enquiry-now"
-                                },
-                                "overview": {
-                                    "title": "Package Overview",
-                                    "description": "Kashmir Valley is a heaven on earth boasting mesmerizing Himalayan views, fragrant pine forests, sparkling crystal rivers, and traditional wooden houseboats. This 5 days / 4 nights journey connects the soul of Srinagar, Gulmarg's snow wonderland, and Pahalgam's valleys.",
-                                    "image": "/images/hero-2.webp"
-                                },
-                                "highlightsTitle": "Highlights",
-                                "highlights": [
-                                    {
-                                        "icon": "waterOutline",
-                                        "title": "Dal Lake Shikara",
-                                        "subtitle": "Romantic Sunset Boat Ride"
-                                    },
-                                    {
-                                        "icon": "mountain",
-                                        "title": "Gulmarg Gondola",
-                                        "subtitle": "World's Highest Cable Car"
-                                    },
-                                    {
-                                        "icon": "mountain",
-                                        "title": "Betaab Valley",
-                                        "subtitle": "Lush Meadows of Pahalgam"
-                                    },
-                                    {
-                                        "icon": "umbrellaBeach",
-                                        "title": "Mughal Gardens",
-                                        "subtitle": "Nishat & Shalimar Bagh"
-                                    },
-                                    {
-                                        "icon": "utensils",
-                                        "title": "Kashmiri Wazwan",
-                                        "subtitle": "Authentic Local Cuisine"
-                                    },
-                                    {
-                                        "icon": "camera",
-                                        "title": "Handicrafts & Silk",
-                                        "subtitle": "Pashmina & Saffron Shopping"
-                                    }
-                                ],
-                                "itineraryTitle": "Detailed Itinerary",
-                                "itinerary": [
-                                    {
-                                        "day": "Day 1",
-                                        "title": "Arrival in Srinagar – Dal Lake Shikara Ride",
-                                        "desc": "Arrive at Srinagar Sheikh ul-Alam Airport. Check-in to a luxury Dal Lake houseboat and enjoy an evening shikara cruise across floating markets.",
-                                        "image": "/images/hero-2.webp"
-                                    },
-                                    {
-                                        "day": "Day 2",
-                                        "title": "Srinagar to Gulmarg Day Trip",
-                                        "desc": "Drive through scenic pine valleys to Gulmarg. Experience the world famous Gondola cable car ride up to Kongdoori and Apharwat Peak.",
-                                        "image": "/images/hero-1.webp"
-                                    },
-                                    {
-                                        "day": "Day 3",
-                                        "title": "Pahalgam Valley Excursion",
-                                        "desc": "Full day tour to Pahalgam (Valley of Shepherds). Visit Betaab Valley, Aru Valley and stroll along the roaring Lidder River.",
-                                        "image": "/images/destination-bali.webp"
-                                    },
-                                    {
-                                        "day": "Day 4",
-                                        "title": "Srinagar Mughal Gardens & Heritage Walk",
-                                        "desc": "Tour the historic Mughal Gardens including Nishat Bagh, Shalimar Bagh, Chashme Shahi, and Shankaracharya Temple.",
-                                        "image": "/images/why-us-3.webp"
-                                    },
-                                    {
-                                        "day": "Day 5",
-                                        "title": "Departure from Srinagar",
-                                        "desc": "After traditional breakfast and Kehwa tea, transfer to Srinagar airport for your flight home with treasured memories.",
-                                        "image": "/images/cta-bg.webp"
-                                    }
-                                ],
-                                "inclusionsTitle": "Inclusions",
-                                "inclusions": [
-                                    "1 night stay in premium Dal Lake Houseboat",
-                                    "3 nights stay in 3-star hotel in Srinagar",
-                                    "Daily breakfast and dinner (MAP plan)",
-                                    "1 hour complimentary Shikara ride on Dal Lake",
-                                    "All transfers and sightseeing by private dedicated cab",
-                                    "Toll taxes, driver allowances and parking charges"
-                                ],
-                                "exclusionsTitle": "Exclusions",
-                                "exclusions": [
-                                    "Airfare / Train tickets",
-                                    "Gondola cable car tickets in Gulmarg",
-                                    "Pony ride and local union vehicle charges in Pahalgam",
-                                    "Entry tickets to monuments and gardens",
-                                    "Personal expenses and travel insurance"
-                                ]
-                            },
-                            {
-                                "id": 3,
-                                "categoryId": 1,
-                                "slug": "europe-dream-tour",
-                                "title": "Europe Dream Tour",
-                                "tag": "Luxury",
-                                "location": "Paris, Rome, Venice, Zurich",
-                                "duration": "10 Days / 9 Nights",
-                                "people": "2+ People",
-                                "groupSize": "2+ People",
-                                "transportType": "flight",
-                                "transportText": "Flight Included",
-                                "transport": "Flight Included",
-                                "description": "Explore iconic cities, world-famous landmarks and create memories for a lifetime.",
-                                "shortDescription": "Discover the best of Europe across France, Switzerland and Italy with Eiffel Tower, Swiss snow peaks and Venice canals.",
-                                "price": "₹ 1,20,000",
-                                "priceLabel": "Starting From",
-                                "priceUnit": "per person",
-                                "image": "/images/destination-switzerland.webp",
-                                "heroImage": "/images/destination-switzerland.webp",
-                                "rating": 4.9,
-                                "reviewsCount": "(180+ Reviews)",
-                                "accommodation": "4 Star Premium Hotel",
-                                "enquiryButton": {
-                                    "text": "Enquiry Now",
-                                    "href": "/enquiry-now"
-                                },
-                                "overview": {
-                                    "title": "Package Overview",
-                                    "description": "Embark on an unforgettable grand voyage through Western Europe. Marvel at the sparkling Eiffel Tower in Paris, scale snow-clad Mount Titlis in Switzerland, cruise the ancient canals of Venice, and step back in time at Rome's Colosseum.",
-                                    "image": "/images/destination-switzerland.webp"
-                                },
-                                "highlightsTitle": "Highlights",
-                                "highlights": [
-                                    {
-                                        "icon": "camera",
-                                        "title": "Eiffel Tower",
-                                        "subtitle": "Level 2 & Seine River Cruise"
-                                    },
-                                    {
-                                        "icon": "mountain",
-                                        "title": "Swiss Mount Titlis",
-                                        "subtitle": "Rotair & Ice Flyer Adventure"
-                                    },
-                                    {
-                                        "icon": "waterOutline",
-                                        "title": "Venice Gondola",
-                                        "subtitle": "Grand Canal Waterway Tour"
-                                    },
-                                    {
-                                        "icon": "buildingLibrary",
-                                        "title": "Roman Colosseum",
-                                        "subtitle": "Ancient Ruins & Vatican City"
-                                    },
-                                    {
-                                        "icon": "utensils",
-                                        "title": "European Dining",
-                                        "subtitle": "French Bakery & Italian Pasta"
-                                    },
-                                    {
-                                        "icon": "umbrellaBeach",
-                                        "title": "Scenic Railways",
-                                        "subtitle": "High-speed Euro Rail Journeys"
-                                    }
-                                ],
-                                "itineraryTitle": "Detailed Itinerary",
-                                "itinerary": [
-                                    {
-                                        "day": "Day 1",
-                                        "title": "Arrival in Paris – City of Lights",
-                                        "desc": "Arrive in Paris, transfer to your hotel and unwind. Evening Seine River sightseeing cruise showcasing illuminated landmarks.",
-                                        "image": "/images/destination-switzerland.webp"
-                                    },
-                                    {
-                                        "day": "Day 2",
-                                        "title": "Paris Sightseeing & Eiffel Tower",
-                                        "desc": "Visit Champs-Élysées, Arc de Triomphe, Louvre exterior, and ascend the 2nd level of the Eiffel Tower for panoramic views.",
-                                        "image": "/images/hero-1.webp"
-                                    },
-                                    {
-                                        "day": "Day 3",
-                                        "title": "Paris to Swiss Alps via TGV Train",
-                                        "desc": "Board the high-speed train to Switzerland. Arrive in Lucerne, check-in to alpine hotel and enjoy Chapel Bridge walk.",
-                                        "image": "/images/destination-turkey.webp"
-                                    },
-                                    {
-                                        "day": "Day 4",
-                                        "title": "Mount Titlis Snow Mountain Excursion",
-                                        "desc": "Ride the world's first revolving cable car to Mount Titlis summit. Explore the Glacier Cave and cross the Cliff Walk.",
-                                        "image": "/images/hero-2.webp"
-                                    },
-                                    {
-                                        "day": "Day 5",
-                                        "title": "Switzerland to Venice, Italy",
-                                        "desc": "Cross the scenic Alps into Venice. Check-in, take a romantic water taxi to St. Mark's Square and Basilica.",
-                                        "image": "/images/destination-thailand.webp"
-                                    },
-                                    {
-                                        "day": "Day 6",
-                                        "title": "Venice to Rome via Florence",
-                                        "desc": "Morning Gondola ride in Venice, then train to Rome with a photo stop in Florence to view the Cathedral and Ponte Vecchio.",
-                                        "image": "/images/why-us-3.webp"
-                                    },
-                                    {
-                                        "day": "Day 7",
-                                        "title": "Colosseum & Roman Forum Tour",
-                                        "desc": "Guided walking tour through ancient Rome, the mighty Colosseum, Roman Forum and the Pantheon.",
-                                        "image": "/images/enquiry-resort.webp"
-                                    },
-                                    {
-                                        "day": "Day 8",
-                                        "title": "Vatican City & Trevi Fountain",
-                                        "desc": "Explore St. Peter's Basilica and Vatican Museums. Toss a coin at Trevi Fountain for good fortune.",
-                                        "image": "/images/stats-bg.webp"
-                                    },
-                                    {
-                                        "day": "Day 9",
-                                        "title": "Leisure Day in Rome",
-                                        "desc": "Free day to shop designer boutiques on Via del Corso or relax in quaint cafes enjoying espresso and gelato.",
-                                        "image": "/images/destination-bali.webp"
-                                    },
-                                    {
-                                        "day": "Day 10",
-                                        "title": "Departure from Rome",
-                                        "desc": "Check-out and private transfer to Rome Fiumicino Airport for your journey home with magnificent stories.",
-                                        "image": "/images/cta-bg.webp"
-                                    }
-                                ],
-                                "inclusionsTitle": "Inclusions",
-                                "inclusions": [
-                                    "International roundtrip airfare with baggage",
-                                    "9 nights accommodation in 4-star hotels with breakfast",
-                                    "High-speed Euro rail tickets between cities",
-                                    "Eiffel Tower Level 2 & Mount Titlis cable car tickets",
-                                    "Guided sightseeing in Paris, Lucerne, Venice and Rome",
-                                    "Schengen tourist visa documentation assistance"
-                                ],
-                                "exclusionsTitle": "Exclusions",
-                                "exclusions": [
-                                    "Schengen visa consulate fees",
-                                    "City tourist taxes (payable directly at hotel receptions)",
-                                    "Meals other than breakfast",
-                                    "Personal expenses and porterage services",
-                                    "Mandatory international travel insurance"
-                                ]
-                            },
-                            {
-                                "id": 4,
-                                "categoryId": 1,
-                                "slug": "thailand-island-tour",
-                                "title": "Thailand Island Tour",
-                                "tag": "Family",
-                                "location": "Phuket, Krabi, Bangkok",
-                                "duration": "7 Days / 6 Nights",
-                                "people": "2+ People",
-                                "groupSize": "2+ People",
-                                "transportType": "flight",
-                                "transportText": "Flight Included",
-                                "transport": "Flight Included",
-                                "description": "Enjoy crystal clear waters, golden beaches and exciting city tours in Thailand.",
-                                "shortDescription": "Experience vibrant Thailand with turquoise island hopping in Phuket & Krabi, thrilling water sports and cultural temples of Bangkok.",
-                                "price": "₹ 55,000",
-                                "priceLabel": "Starting From",
-                                "priceUnit": "per person",
-                                "image": "/images/destination-thailand.webp",
-                                "heroImage": "/images/destination-thailand.webp",
-                                "rating": 4.7,
-                                "reviewsCount": "(140+ Reviews)",
-                                "accommodation": "4 Star Beach Resort",
-                                "enquiryButton": {
-                                    "text": "Enquiry Now",
-                                    "href": "/enquiry-now"
-                                },
-                                "overview": {
-                                    "title": "Package Overview",
-                                    "description": "Unwind in the Land of Smiles with this comprehensive Thailand escape. Sail on speedboats to the renowned Phi Phi Islands, marvel at Krabi's limestone cliffs, and indulge in world-class shopping and dining in bustling Bangkok.",
-                                    "image": "/images/destination-thailand.webp"
-                                },
-                                "highlightsTitle": "Highlights",
-                                "highlights": [
-                                    {
-                                        "icon": "waterOutline",
-                                        "title": "Phi Phi Islands",
-                                        "subtitle": "Speedboat Tour with Lunch"
-                                    },
-                                    {
-                                        "icon": "umbrellaBeach",
-                                        "title": "Krabi 4 Islands",
-                                        "subtitle": "Railay Beach & Snorkeling"
-                                    },
-                                    {
-                                        "icon": "mountain",
-                                        "title": "James Bond Bay",
-                                        "subtitle": "Limestone Karst Sea Kayaking"
-                                    },
-                                    {
-                                        "icon": "buildingLibrary",
-                                        "title": "Bangkok Temples",
-                                        "subtitle": "Wat Pho & Wat Arun"
-                                    },
-                                    {
-                                        "icon": "utensils",
-                                        "title": "Chao Phraya Cruise",
-                                        "subtitle": "Grand Dinner Buffet on River"
-                                    },
-                                    {
-                                        "icon": "camera",
-                                        "title": "Night Bazaars",
-                                        "subtitle": "Patong & Chatuchak Markets"
-                                    }
-                                ],
-                                "itineraryTitle": "Detailed Itinerary",
-                                "itinerary": [
-                                    {
-                                        "day": "Day 1",
-                                        "title": "Arrival in Phuket – Resort Check-in",
-                                        "desc": "Arrive at Phuket International Airport, meet representative and transfer to beachfront resort. Evening at Patong Beach.",
-                                        "image": "/images/destination-thailand.webp"
-                                    },
-                                    {
-                                        "day": "Day 2",
-                                        "title": "Phi Phi Island Speedboat Adventure",
-                                        "desc": "Exciting speedboat trip to Maya Bay, Viking Cave, Monkey Beach and Pileh Lagoon with buffet lunch.",
-                                        "image": "/images/destination-bali.webp"
-                                    },
-                                    {
-                                        "day": "Day 3",
-                                        "title": "Phuket to Krabi by Scenic Ferry",
-                                        "desc": "Transfer to Krabi by sea ferry. Check-in to Ao Nang resort and spend the evening enjoying beachside cafes.",
-                                        "image": "/images/destination-maldives.webp"
-                                    },
-                                    {
-                                        "day": "Day 4",
-                                        "title": "Krabi Four Islands Tour",
-                                        "desc": "Visit Koh Poda, Chicken Island, Tup Island and Phra Nang Cave Beach with crystal water snorkeling.",
-                                        "image": "/images/why-us-1.webp"
-                                    },
-                                    {
-                                        "day": "Day 5",
-                                        "title": "Flight to Bangkok & River Dinner Cruise",
-                                        "desc": "Fly from Krabi to Bangkok. Evening luxury dinner cruise along the Chao Phraya River with live entertainment.",
-                                        "image": "/images/hero-2.webp"
-                                    },
-                                    {
-                                        "day": "Day 6",
-                                        "title": "Bangkok City & Golden Buddha Temple Tour",
-                                        "desc": "Half-day cultural tour visiting Wat Traimit and Wat Benchamabophit, followed by shopping at MBK and Siam Paragon.",
-                                        "image": "/images/why-us-3.webp"
-                                    },
-                                    {
-                                        "day": "Day 7",
-                                        "title": "Departure from Bangkok",
-                                        "desc": "Check-out and transfer to Suvarnabhumi Airport for your return flight home.",
-                                        "image": "/images/cta-bg.webp"
-                                    }
-                                ],
-                                "inclusionsTitle": "Inclusions",
-                                "inclusions": [
-                                    "Roundtrip international flight tickets",
-                                    "Domestic flight from Krabi to Bangkok",
-                                    "6 nights 4-star accommodation with daily breakfast",
-                                    "Full day Phi Phi Island tour with lunch by speedboat",
-                                    "Krabi Four Islands tour with snorkeling equipment",
-                                    "Bangkok river dinner cruise & city temple tour",
-                                    "All airport and ferry transfers in private AC vehicle"
-                                ],
-                                "exclusionsTitle": "Exclusions",
-                                "exclusions": [
-                                    "Thailand Visa fee on arrival",
-                                    "National Marine Park conservation fee",
-                                    "Personal watersports (parasailing, jet-ski)",
-                                    "Lunches and dinners not listed in inclusions",
-                                    "Travel insurance"
-                                ]
-                            },
-                            {
-                                "id": 5,
-                                "categoryId": 2,
-                                "slug": "romantic-maldives-escape",
-                                "title": "Romantic Maldives Escape",
-                                "tag": "Honeymoon",
-                                "location": "Male, Maldives",
-                                "duration": "5 Days / 4 Nights",
-                                "people": "2 People",
-                                "groupSize": "2 People",
-                                "transportType": "flight",
-                                "transportText": "Flight Included",
-                                "transport": "Flight Included",
-                                "description": "Indulge in private overwater villas, candle-lit beach dinners and turquoise lagoons.",
-                                "shortDescription": "Ultimate luxury honeymoon in the Maldives with private overwater villa, private pool, coral reef snorkeling and sunset champagne cruise.",
-                                "price": "₹ 95,000",
-                                "priceLabel": "Starting From",
-                                "priceUnit": "per person",
-                                "image": "/images/destination-maldives.webp",
-                                "heroImage": "/images/destination-maldives.webp",
-                                "rating": 4.9,
-                                "reviewsCount": "(165+ Reviews)",
-                                "accommodation": "Luxury Overwater Villa",
-                                "enquiryButton": {
-                                    "text": "Enquiry Now",
-                                    "href": "/enquiry-now"
-                                },
-                                "overview": {
-                                    "title": "Package Overview",
-                                    "description": "Escape to private tropical paradise where the ocean meets luxury. Stay suspended above pristine turquoise water in an overwater villa, plunge into coral gardens with colorful marine life, and celebrate love with bespoke romantic dinners right on the beach.",
-                                    "image": "/images/destination-maldives.webp"
-                                },
-                                "highlightsTitle": "Highlights",
-                                "highlights": [
-                                    {
-                                        "icon": "umbrellaBeach",
-                                        "title": "Water Villa Stay",
-                                        "subtitle": "Direct Ocean Lagoon Access"
-                                    },
-                                    {
-                                        "icon": "waterOutline",
-                                        "title": "Reef Snorkeling",
-                                        "subtitle": "Mantas, Turtles & Coral Gardens"
-                                    },
-                                    {
-                                        "icon": "camera",
-                                        "title": "Sunset Cruise",
-                                        "subtitle": "Dolphin Watching with Champagne"
-                                    },
-                                    {
-                                        "icon": "utensils",
-                                        "title": "Candlelight Dinner",
-                                        "subtitle": "Private 4-Course Beach Dining"
-                                    },
-                                    {
-                                        "icon": "buildingLibrary",
-                                        "title": "Overwater Spa",
-                                        "subtitle": "Couple Relaxing Body Massage"
-                                    },
-                                    {
-                                        "icon": "mountain",
-                                        "title": "Speedboat Ride",
-                                        "subtitle": "Scenic Transfers across Atolls"
-                                    }
-                                ],
-                                "itineraryTitle": "Detailed Itinerary",
-                                "itinerary": [
-                                    {
-                                        "day": "Day 1",
-                                        "title": "Arrival in Male – Speedboat Transfer",
-                                        "desc": "Arrive at Velana International Airport. Meet resort representative for a breathtaking speedboat transfer to your private island resort.",
-                                        "image": "/images/destination-maldives.webp"
-                                    },
-                                    {
-                                        "day": "Day 2",
-                                        "title": "Water Villa Leisure & House Reef Snorkeling",
-                                        "desc": "Wake up to endless ocean vistas. Explore the vibrant house reef with complimentary snorkeling equipment and spot exotic marine life.",
-                                        "image": "/images/destination-bali.webp"
-                                    },
-                                    {
-                                        "day": "Day 3",
-                                        "title": "Sunset Dolphin Watching & Candlelit Dinner",
-                                        "desc": "Late afternoon Dhoni cruise searching for playful spinner dolphins, followed by an intimate candlelit dinner on the beach.",
-                                        "image": "/images/destination-thailand.webp"
-                                    },
-                                    {
-                                        "day": "Day 4",
-                                        "title": "Couple Spa & Lagoon Water Sports",
-                                        "desc": "Indulge in a signature couple massage at the overwater spa pavilion. Afternoon sea kayaking and paddle boarding.",
-                                        "image": "/images/hero-1.webp"
-                                    },
-                                    {
-                                        "day": "Day 5",
-                                        "title": "Departure from Maldives",
-                                        "desc": "Enjoy a floating breakfast, check-out and board the speedboat transfer back to Male Airport for flight departure.",
-                                        "image": "/images/cta-bg.webp"
-                                    }
-                                ],
-                                "inclusionsTitle": "Inclusions",
-                                "inclusions": [
-                                    "International roundtrip flight tickets",
-                                    "4 nights stay in Luxury Overwater Villa with private deck",
-                                    "All-Inclusive meal plan (Breakfast, Lunch, Dinner & Selected Drinks)",
-                                    "Roundtrip speedboat transfers from/to Male Airport",
-                                    "1 complimentary sunset dolphin cruise for couple",
-                                    "Free use of snorkeling equipment, kayaks & paddleboards",
-                                    "All resort service charges and Maldives Green Tax"
-                                ],
-                                "exclusionsTitle": "Exclusions",
-                                "exclusions": [
-                                    "Motorized watersports (jet ski, flyboarding, seabed seabob)",
-                                    "Premium champagne and vintage cellared wines",
-                                    "A-la-carte spa treatments not included in package",
-                                    "Personal laundry and photography packages",
-                                    "Travel insurance"
-                                ]
-                            },
-                            {
-                                "id": 6,
-                                "categoryId": 3,
-                                "slug": "dubai-family-extravaganza",
-                                "title": "Dubai Family Extravaganza",
-                                "tag": "Family",
-                                "location": "Dubai, UAE",
-                                "duration": "6 Days / 5 Nights",
-                                "people": "2+ People",
-                                "groupSize": "2+ People",
-                                "transportType": "flight",
-                                "transportText": "Flight Included",
-                                "transport": "Flight Included",
-                                "description": "Burj Khalifa, Desert Safari, theme parks and luxury shopping for the entire family.",
-                                "shortDescription": "The ultimate family holiday in Dubai with Burj Khalifa 124th floor observatory, thrilling 4x4 desert safari, theme parks and luxury marina cruise.",
-                                "price": "₹ 68,000",
-                                "priceLabel": "Starting From",
-                                "priceUnit": "per person",
-                                "image": "/images/why-us-3.webp",
-                                "heroImage": "/images/why-us-3.webp",
-                                "rating": 4.8,
-                                "reviewsCount": "(110+ Reviews)",
-                                "accommodation": "4 Star City Center Hotel",
-                                "enquiryButton": {
-                                    "text": "Enquiry Now",
-                                    "href": "/enquiry-now"
-                                },
-                                "overview": {
-                                    "title": "Package Overview",
-                                    "description": "Discover a city of wonders where traditional Arabian hospitality meets modern architecture. From riding the golden sand dunes on a desert safari to touching the clouds at Burj Khalifa and shopping in giant malls, Dubai is the premier family destination.",
-                                    "image": "/images/why-us-3.webp"
-                                },
-                                "highlightsTitle": "Highlights",
-                                "highlights": [
-                                    {
-                                        "icon": "buildingLibrary",
-                                        "title": "Burj Khalifa",
-                                        "subtitle": "124th & 125th Floor Observatory"
-                                    },
-                                    {
-                                        "icon": "mountain",
-                                        "title": "Desert Safari",
-                                        "subtitle": "Dune Bashing, Camel Ride & BBQ"
-                                    },
-                                    {
-                                        "icon": "waterOutline",
-                                        "title": "Marina Dhow Cruise",
-                                        "subtitle": "Luxury Evening Buffet Cruise"
-                                    },
-                                    {
-                                        "icon": "umbrellaBeach",
-                                        "title": "Miracle Garden",
-                                        "subtitle": "World's Largest Floral Garden"
-                                    },
-                                    {
-                                        "icon": "utensils",
-                                        "title": "Arabian Dining",
-                                        "subtitle": "Shawarma, Grills & Kunafa"
-                                    },
-                                    {
-                                        "icon": "camera",
-                                        "title": "Dubai Frame",
-                                        "subtitle": "Iconic Glass Bridge Experience"
-                                    }
-                                ],
-                                "itineraryTitle": "Detailed Itinerary",
-                                "itinerary": [
-                                    {
-                                        "day": "Day 1",
-                                        "title": "Arrival in Dubai – Welcome & Check-in",
-                                        "desc": "Arrive at Dubai International Airport. Meet representative and transfer to your 4-star downtown hotel. Evening free to relax.",
-                                        "image": "/images/why-us-3.webp"
-                                    },
-                                    {
-                                        "day": "Day 2",
-                                        "title": "Dubai City Tour & Marina Dhow Cruise",
-                                        "desc": "Guided city tour covering Dubai Museum, Jumeirah Beach, and Burj Al Arab photo stop. Evening Marina Dhow Cruise with buffet dinner.",
-                                        "image": "/images/destination-turkey.webp"
-                                    },
-                                    {
-                                        "day": "Day 3",
-                                        "title": "Desert Safari with BBQ Dinner & Shows",
-                                        "desc": "Afternoon 4x4 Land Cruiser desert dune bashing, camel riding, sand boarding, tanoura dance show and Arabic BBQ dinner.",
-                                        "image": "/images/stats-bg.webp"
-                                    },
-                                    {
-                                        "day": "Day 4",
-                                        "title": "Dubai Mall & Burj Khalifa 124th Floor",
-                                        "desc": "Explore Dubai Mall, watch the Dubai Dancing Fountain show, and take the high-speed elevator to Burj Khalifa 124th floor.",
-                                        "image": "/images/hero-2.webp"
-                                    },
-                                    {
-                                        "day": "Day 5",
-                                        "title": "Dubai Frame & Miracle Garden",
-                                        "desc": "Visit the Dubai Frame for old vs new Dubai views, followed by millions of blooming flowers at Dubai Miracle Garden.",
-                                        "image": "/images/destination-switzerland.webp"
-                                    },
-                                    {
-                                        "day": "Day 6",
-                                        "title": "Souk Shopping & Departure",
-                                        "desc": "Explore the Gold Souk and Spice Souk for souvenirs, check-out and private transfer to airport for departure.",
-                                        "image": "/images/cta-bg.webp"
-                                    }
-                                ],
-                                "inclusionsTitle": "Inclusions",
-                                "inclusions": [
-                                    "International roundtrip flight tickets",
-                                    "5 nights accommodation in 4-star hotel with breakfast",
-                                    "Dubai tourist visa assistance & processing",
-                                    "Desert safari with 4x4 dune bashing & BBQ dinner buffet",
-                                    "Burj Khalifa 124th floor entry ticket (non-prime hours)",
-                                    "Dubai Marina Dhow Cruise with international buffet",
-                                    "All tours and airport transfers by private vehicle"
-                                ],
-                                "exclusionsTitle": "Exclusions",
-                                "exclusions": [
-                                    "Tourism Dirham fee (approx AED 15/night payable at hotel)",
-                                    "Lunches unless mentioned in itinerary",
-                                    "Personal shopping, tipping and porterage",
-                                    "Optional attractions like Atlantis Aquaventure Waterpark",
-                                    "Travel insurance"
-                                ]
-                            }
-                        ]
-                    }
-                }
-            },
-            "pageTopSection": {
-                "variants": {
-                    "TourlyPageTop1": {
-                        "bgImage": "/images/page-top-bg.webp",
-                        "defaultTitle": "About Us"
-                    }
-                }
-            },
-            "thankYou": {
-                "variants": {
-                    "TourlyThankYou1": {
-                        "badge": "Inquiry Received Successfully",
-                        "titlePrefix": "Thank You For Planning Your ",
-                        "titleHighlight": "Dream Journey",
-                        "description": "We have received your trip details. Our senior destination specialist is now hand-crafting a personalized holiday plan tailored to your preferences and will reach out to you within 24 hours.",
-                        "primaryButton": {
-                            "text": "Explore Packages",
-                            "href": "/packages"
-                        },
-                        "secondaryButton": {
-                            "text": "Back to Homepage",
-                            "href": "/"
-                        }
-                    }
-                }
-            },
-            "notFound": {
-                "variants": {
-                    "TourlyNotFound1": {
-                        "badge": "Lost In Exploration",
-                        "code": "404",
-                        "title": "Oops! Looks Like You’ve Wandered Off The Map",
-                        "description": "The destination or page you are looking for might have been moved, renamed, or is temporarily taking a detour to a tropical island.",
-                        "primaryButton": {
-                            "text": "Return to Homepage",
-                            "href": "/"
-                        },
-                        "secondaryButton": {
-                            "text": "Explore Tour Packages",
-                            "href": "/packages"
-                        }
-                    }
-                }
-            }
+        "pages": {
+          "home": {
+            "components": [
+              {
+                "key": "hero",
+                "component": "TourlyHero1"
+              },
+              {
+                "key": "about",
+                "component": "TourlyAbout1"
+              },
+              {
+                "key": "destinations",
+                "component": "TourlyDestinations1"
+              },
+              {
+                "key": "whyChooseUs",
+                "component": "TourlyWhyChooseUs1"
+              },
+              {
+                "key": "stats",
+                "component": "TourlyStats1"
+              },
+              {
+                "key": "testimonials",
+                "component": "TourlyTestimonials1"
+              },
+              {
+                "key": "faqs",
+                "component": "TourlyFaqs1"
+              }
+            ]
+          }
         }
+      }
+    },
+    "sections": {
+      "topbar": {
+        "variants": {
+          "TourlyTopbar1": {
+            "phone": "+1 000000000",
+            "phoneHref": "tel:+1000000000",
+            "email": "info@xyz.com",
+            "emailHref": "mailto:info@xyz.com",
+            "address": "3170 Rosewood Lane Unit 200, Beverly Hills, CA 90210",
+            "socialLinks": [
+              {
+                "name": "Facebook",
+                "href": "https://facebook.com",
+                "icon": "facebook"
+              },
+              {
+                "name": "X",
+                "href": "https://x.com",
+                "icon": "twitter"
+              },
+              {
+                "name": "Instagram",
+                "href": "https://instagram.com",
+                "icon": "instagram"
+              },
+              {
+                "name": "YouTube",
+                "href": "https://youtube.com",
+                "icon": "youtube"
+              }
+            ]
+          }
+        }
+      },
+      "navbar": {
+        "variants": {
+          "TourlyNavbar1": {
+            "logo": {
+              "src": "/logo/logo-blacks.webp",
+              "alt": "Tourly Logo",
+              "width": 220,
+              "height": 65
+            },
+            "navItems": [
+              {
+                "name": "Home",
+                "href": "#home"
+              },
+              {
+                "name": "About Us",
+                "href": "#about"
+              },
+              {
+                "name": "Destinations",
+                "href": "#destinations"
+              },
+              {
+                "name": "Why Choose Us",
+                "href": "#why-choose-us"
+              },
+              {
+                "name": "Testimonials",
+                "href": "#testimonials"
+              },
+              {
+                "name": "FAQs",
+                "href": "#faqs"
+              }
+            ],
+            "ctaButton": {
+              "text": "Enquiry Now",
+              "href": "#cta"
+            }
+          }
+        }
+      },
+      "footer": {
+        "variants": {
+          "TourlyFooter1": {
+            "logo": {
+              "src": "/logo/logo-whites.webp",
+              "alt": "Tourly Logo",
+              "width": 230,
+              "height": 68
+            },
+            "bgImage": "/images/footer-bg.webp",
+            "description": "At Tourly, we create memorable travel experiences with carefully curated packages, personalized service and dedicated support for explorers like you.",
+            "socialLinks": [
+              {
+                "name": "Facebook",
+                "href": "https://facebook.com",
+                "icon": "facebook"
+              },
+              {
+                "name": "Instagram",
+                "href": "https://instagram.com",
+                "icon": "instagram"
+              },
+              {
+                "name": "YouTube",
+                "href": "https://youtube.com",
+                "icon": "youtube"
+              },
+              {
+                "name": "LinkedIn",
+                "href": "https://linkedin.com",
+                "icon": "linkedin"
+              }
+            ],
+            "quickLinksTitle": "Quick Links",
+            "quickLinks": [
+              {
+                "name": "Home",
+                "href": "#home"
+              },
+              {
+                "name": "About Us",
+                "href": "#about"
+              },
+              {
+                "name": "Destinations",
+                "href": "#destinations"
+              },
+              {
+                "name": "Why Choose Us",
+                "href": "#why-choose-us"
+              },
+              {
+                "name": "Testimonials",
+                "href": "#testimonials"
+              },
+              {
+                "name": "FAQs",
+                "href": "#faqs"
+              }
+            ],
+            "destinationsTitle": "Popular Destinations",
+            "destinationLinks": [
+              {
+                "name": "India Tours",
+                "href": "#destinations"
+              },
+              {
+                "name": "International Tours",
+                "href": "#destinations"
+              },
+              {
+                "name": "Honeymoon Packages",
+                "href": "#destinations"
+              },
+              {
+                "name": "Adventure Tours",
+                "href": "#destinations"
+              },
+              {
+                "name": "Family Tours",
+                "href": "#destinations"
+              },
+              {
+                "name": "Group Tours",
+                "href": "#destinations"
+              },
+              {
+                "name": "Custom Packages",
+                "href": "#destinations"
+              }
+            ],
+            "contactTitle": "Contact Information",
+            "phone": "+1 000000000",
+            "phoneHref": "tel:+1000000000",
+            "email": "info@xyz.com",
+            "emailHref": "mailto:info@xyz.com",
+            "address": "3170 Rosewood Lane Unit 200, Beverly Hills, CA 90210",
+            "copyright": "© 2026 Tourly. All Rights Reserved. Powered by Lestow"
+          }
+        }
+      },
+      "hero": {
+        "variants": {
+          "TourlyHero1": {
+            "slides": [
+              {
+                "id": 1,
+                "image": "/images/hero-1.webp"
+              },
+              {
+                "id": 2,
+                "image": "/images/hero-2.webp"
+              },
+              {
+                "id": 3,
+                "image": "/images/hero-3.webp"
+              },
+              {
+                "id": 4,
+                "image": "/images/hero-4.webp"
+              }
+            ]
+          }
+        }
+      },
+      "about": {
+        "variants": {
+          "TourlyAbout1": {
+            "subtitle": "ABOUT US",
+            "title": "About Us",
+            "lead": "Top Tour Operators and Travel Agency. We offering in total 793 tours and holidays through-out the world. Combined we have received 1532 customer reviews.",
+            "description": "Travel has helped us to understand the meaning of life and it has helped us become better people. Each time we travel, we see the world with new eyes.Travel has helped us to understand the meaning of life and it has helped us become better people. Each time we travel, we see the world with new eyes.Travel has helped us to understand the meaning of life and it has helped us.",
+            "features": [
+              {
+                "icon": "shieldCheck",
+                "title": "Safety Travel System"
+              },
+              {
+                "icon": "handCoins",
+                "title": "Budget-Friendly Tour"
+              },
+              {
+                "icon": "headset",
+                "title": "24/7 Customer Support"
+              },
+              {
+                "icon": "clock",
+                "title": "Expert Trip Planning"
+              },
+              {
+                "icon": "radio",
+                "title": "Fast Communication"
+              },
+              {
+                "icon": "thumbsUp",
+                "title": "Right Solution & Guide"
+              }
+            ],
+            "contactButton": {
+              "text": "Contact Us",
+              "href": "#cta"
+            },
+            "readMoreButton": {
+              "text": "Explore Destinations",
+              "href": "#destinations"
+            }
+          }
+        }
+      },
+      "destinations": {
+        "variants": {
+          "TourlyDestinations1": {
+            "subtitle": "POPULAR DESTINATIONS",
+            "titlePrefix": "Explore ",
+            "titleHighlight": "Popular Destinations",
+            "description": "Discover breathtaking destinations worldwide with our curated holiday packages, tailored for unforgettable experiences.",
+            "destinationsList": [
+              {
+                "id": 1,
+                "title": "Bali, Indonesia",
+                "packages": "25+ Packages",
+                "price": "$1200",
+                "description": "Pristine beaches, ancient temples and vibrant culture make Bali a dream destination.",
+                "image": "/images/destination-bali.webp",
+                "href": "#destinations",
+                "variant": "grid"
+              },
+              {
+                "id": 2,
+                "title": "Maldives",
+                "packages": "18+ Packages",
+                "price": "$1500",
+                "description": "Crystal clear waters, luxury resorts and unforgettable island experiences.",
+                "image": "/images/destination-maldives.webp",
+                "href": "#destinations",
+                "variant": "grid"
+              },
+              {
+                "id": 3,
+                "title": "Thailand",
+                "packages": "30+ Packages",
+                "price": "$1100",
+                "description": "Stunning beaches, bustling cities and rich cultural heritage await you in Thailand.",
+                "image": "/images/destination-thailand.webp",
+                "href": "#destinations",
+                "variant": "grid"
+              },
+              {
+                "id": 4,
+                "title": "Singapore",
+                "packages": "15+ Packages",
+                "price": "$700",
+                "description": "A modern city with iconic attractions, shopping and world-class experiences.",
+                "image": "/images/destination-singapore.webp",
+                "href": "#destinations",
+                "variant": "grid"
+              },
+              {
+                "id": 5,
+                "title": "Dubai, UAE",
+                "packages": "28+ Packages",
+                "price": "$1800",
+                "description": "Experience luxury, modern architecture and thrilling desert adventures.",
+                "image": "/images/destination-dubai.webp",
+                "href": "#destinations",
+                "variant": "grid"
+              },
+              {
+                "id": 6,
+                "title": "Europe",
+                "packages": "40+ Packages",
+                "price": "$1800",
+                "description": "Explore iconic cities, historic landmarks and diverse cultures across Europe.",
+                "image": "/images/destination-europe.webp",
+                "href": "#destinations",
+                "variant": "grid"
+              },
+              {
+                "id": 7,
+                "title": "Kashmir, India",
+                "packages": "20+ Packages",
+                "price": "$700",
+                "description": "Paradise on Earth with scenic valleys, shikara rides and snow clad peaks.",
+                "image": "/images/destination-kashmir.webp",
+                "href": "#destinations",
+                "variant": "grid"
+              },
+              {
+                "id": 8,
+                "title": "Turkey",
+                "packages": "22+ Packages",
+                "price": "$1200",
+                "description": "Where East meets West with rich history, stunning landscapes and vibrant bazaars.",
+                "image": "/images/destination-turkey.webp",
+                "href": "#destinations",
+                "variant": "grid"
+              }
+            ]
+          }
+        }
+      },
+      "whyChooseUs": {
+        "variants": {
+          "TourlyWhyChooseUs1": {
+            "subtitle": "WHY CHOOSE US",
+            "title": "Great Opportunity for Adventure & Travel",
+            "description": "With over a decade of excellence in luxury and budget travel, we make sure every journey you take is memorable, seamless, and completely tailored to your wishes.",
+            "images": {
+              "main": "/images/why-us-main.webp",
+              "topRight": "/images/why-us-top.webp",
+              "bottomRight": "/images/why-us-bottom.webp"
+            },
+            "features": [
+              {
+                "icon": "shieldCheck",
+                "title": "Safety First Always",
+                "description": "Your safety is our top priority with trusted partners and verified services."
+              },
+              {
+                "icon": "coins",
+                "title": "Best Price Guarantee",
+                "description": "Get the most value for your money with affordable and transparent pricing."
+              },
+              {
+                "icon": "compass",
+                "title": "Expert Trip Planning",
+                "description": "Customized itineraries to match your interests, budget and travel style."
+              },
+              {
+                "icon": "headset",
+                "title": "24/7 Customer Support",
+                "description": "Our travel experts are always available to assist you, anytime, anywhere."
+              }
+            ],
+            "ctaButton": {
+              "text": "Explore Tours",
+              "href": "/packages"
+            }
+          }
+        }
+      },
+      "stats": {
+        "variants": {
+          "TourlyStats1": {
+            "bgImage": "/images/stats-bg.webp",
+            "stats": [
+              {
+                "id": 1,
+                "target": 20,
+                "suffix": "K+",
+                "label": "Tours Success",
+                "icon": "trendingUp"
+              },
+              {
+                "id": 2,
+                "target": 3700,
+                "suffix": "+",
+                "label": "Happy Traveler",
+                "icon": "users"
+              },
+              {
+                "id": 3,
+                "target": 4461,
+                "suffix": "+",
+                "label": "Awards Winning",
+                "icon": "award"
+              },
+              {
+                "id": 4,
+                "target": 22,
+                "suffix": "+",
+                "label": "Our Experience",
+                "icon": "calendarCheck"
+              }
+            ]
+          }
+        }
+      },
+      "testimonials": {
+        "variants": {
+          "TourlyTestimonials1": {
+            "subtitle": "TESTIMONIALS",
+            "titlePrefix": "What Our ",
+            "titleHighlight": "Travelers Say",
+            "description": "Real stories from real travelers who explored the world with us and created unforgettable memories.",
+            "items": [
+              {
+                "id": 1,
+                "name": "Priya Sharma",
+                "location": "New Delhi, India",
+                "rating": 5,
+                "text": "The trip was perfectly organized and everything went smoothly. Amazing destinations, great support and unforgettable memories. Highly recommended!",
+                "avatar": "/images/testimonial-avatar-1.webp"
+              },
+              {
+                "id": 2,
+                "name": "Rahul Mehta",
+                "location": "Mumbai, India",
+                "rating": 5,
+                "text": "Excellent service and well-planned itinerary. The team was always there to help and made our vacation truly special. Will definitely travel again!",
+                "avatar": "/images/testimonial-avatar-2.webp"
+              },
+              {
+                "id": 3,
+                "name": "Sneha Verma",
+                "location": "Bangalore, India",
+                "rating": 5,
+                "text": "Beautiful destinations, great arrangements and very professional team. It was a hassle-free and memorable experience for us. Thank you!",
+                "avatar": "/images/testimonial-avatar-3.webp"
+              },
+              {
+                "id": 4,
+                "name": "Arjun Kapoor",
+                "location": "Pune, India",
+                "rating": 5,
+                "text": "Exceptional tour guide and 24/7 customer assistance. Every single detail from flight bookings to luxury hotels was handled seamlessly. Best vacation ever!",
+                "avatar": "/images/testimonial-2.webp"
+              }
+            ]
+          }
+        }
+      },
+      "faqs": {
+        "variants": {
+          "TourlyFaqs1": {
+            "subtitle": "FREQUENTLY ASKED QUESTIONS",
+            "titlePrefix": "Everything You ",
+            "titleHighlight": "Need to Know",
+            "description": "Find quick answers to common questions about tour booking, payments, cancellations, and travel requirements.",
+            "leftFaqs": [
+              {
+                "id": 1,
+                "question": "What types of tour packages do you offer?",
+                "answer": "We offer a wide range of tour packages including domestic tours, international tours, honeymoon packages, family vacations, adventure tours, group tours and customized travel packages to suit your preferences and budget."
+              },
+              {
+                "id": 2,
+                "question": "How can I book a tour with Tourly?",
+                "answer": "You can easily book a tour online through our website by selecting your destination, choosing your preferred dates, and submitting an enquiry. Alternatively, you can call our travel consultants directly."
+              },
+              {
+                "id": 3,
+                "question": "What payment methods do you accept?",
+                "answer": "We accept all major credit cards, debit cards, net banking, UPI, wire transfers, and popular digital wallets for secure and hassle-free transactions."
+              },
+              {
+                "id": 4,
+                "question": "Can I customize my travel package?",
+                "answer": "Yes, absolutely! We specialize in tailoring custom holiday itineraries based on your preferred travel dates, hotel preferences, budget, and specific activities."
+              },
+              {
+                "id": 5,
+                "question": "Do you provide international tour packages?",
+                "answer": "Yes, we offer comprehensive international tour packages to popular destinations including Europe, Dubai, Maldives, Bali, Thailand, Singapore, and more."
+              },
+              {
+                "id": 6,
+                "question": "What is included in a tour package?",
+                "answer": "Our standard packages typically include hotel accommodations, daily breakfast, airport transfers, guided sightseeing, and select entrance fees. Specific inclusions vary per package."
+              },
+              {
+                "id": 7,
+                "question": "Are flights and hotels included in the package?",
+                "answer": "Yes, our packages can be booked with or without flights. Premium 3-star, 4-star, and 5-star hotel stays with daily breakfast are standard inclusions."
+              }
+            ],
+            "faqsList": [
+              {
+                "id": 1,
+                "question": "What types of tour packages do you offer?",
+                "answer": "We offer a wide range of tour packages including domestic tours, international tours, honeymoon packages, family vacations, adventure tours, group tours and customized travel packages to suit your preferences and budget."
+              },
+              {
+                "id": 2,
+                "question": "How can I book a tour with Tourly?",
+                "answer": "You can easily book a tour online through our website by selecting your destination, choosing your preferred dates, and submitting an enquiry. Alternatively, you can call our travel consultants directly."
+              },
+              {
+                "id": 3,
+                "question": "What payment methods do you accept?",
+                "answer": "We accept all major credit cards, debit cards, net banking, UPI, wire transfers, and popular digital wallets for secure and hassle-free transactions."
+              },
+              {
+                "id": 4,
+                "question": "Can I customize my travel package?",
+                "answer": "Yes, absolutely! We specialize in tailoring custom holiday itineraries based on your preferred travel dates, hotel preferences, budget, and specific activities."
+              },
+              {
+                "id": 5,
+                "question": "Do you provide international tour packages?",
+                "answer": "Yes, we offer comprehensive international tour packages to popular destinations including Europe, Dubai, Maldives, Bali, Thailand, Singapore, and more."
+              },
+              {
+                "id": 6,
+                "question": "What is included in a tour package?",
+                "answer": "Our standard packages typically include hotel accommodations, daily breakfast, airport transfers, guided sightseeing, and select entrance fees. Specific inclusions vary per package."
+              },
+              {
+                "id": 7,
+                "question": "Are flights and hotels included in the package?",
+                "answer": "Yes, our packages can be booked with or without flights. Premium 3-star, 4-star, and 5-star hotel stays with daily breakfast are standard inclusions."
+              }
+            ]
+          }
+        }
+      },
+      "contactModal": {
+        "variants": {
+          "TourlyContactModal1": {
+            "badge": "✨ Tailored Travel Itinerary",
+            "title": "Plan Your Dream",
+            "titleHighlight": "Trip",
+            "description": "Fill out your travel details and for you within 24 hours.",
+            "submitButton": {
+              "text": "Send Enquiry Now"
+            },
+            "success": {
+              "title": "Enquiry Submitted!",
+              "message": "Thank you for reaching out! Our travel specialist will contact you shortly."
+            }
+          }
+        }
+      },
+      "notFound": {
+        "variants": {
+          "TourlyNotFound1": {
+            "badge": "Lost In Exploration",
+            "code": "404",
+            "title": "Oops! Looks Like You’ve Wandered Off The Map",
+            "description": "The destination or page you are looking for might have been moved, renamed, or is temporarily taking a detour to a tropical island.",
+            "primaryButton": {
+              "text": "Return to Homepage",
+              "href": "/"
+            },
+            "secondaryButton": {
+              "text": "Explore Destinations",
+              "href": "/#destinations"
+            }
+          }
+        }
+      }
     }
+  }
 }

@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import {
     ShieldCheck,
@@ -13,6 +12,7 @@ import {
 } from "lucide-react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { site, type TourlyWhyChooseUsData } from "@/data/index";
+import { useModal } from "@/components/common/ModalContext";
 
 const whyUsIconMap: Record<string, React.ElementType> = {
     shieldCheck: ShieldCheck,
@@ -26,8 +26,9 @@ interface WhyChooseUsSectionProps {
 }
 
 export default function WhyChooseUsSection({ data = site.whyChooseUs }: WhyChooseUsSectionProps) {
+    const { openModal } = useModal();
     return (
-        <section className="relative w-full py-8 lg:py-12 bg-white overflow-hidden">
+        <section id="why-choose-us" className="relative w-full py-8 lg:py-12 bg-white overflow-hidden scroll-mt-20">
             {/* World map */}
             <div className="absolute right-0 top-0 w-80 sm:w-96 h-80 sm:h-96 pointer-events-none opacity-[0.06] bg-[radial-gradient(#054553_1px,transparent_1px)] [background-size:16px_16px]" />
 
@@ -47,8 +48,8 @@ export default function WhyChooseUsSection({ data = site.whyChooseUs }: WhyChoos
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
                     {/* Left image collage */}
                     <div className="lg:col-span-6 relative">
-                        {/* Orange shape */}
-                        <div className="absolute -top-4 -left-4 w-28 h-28 bg-gradient-to-br from-[#ea580c] to-[#f97316] rounded-2xl pointer-events-none -z-0" />
+                        {/* Cyan/Ocean accent shape */}
+                        <div className="absolute -top-4 -left-4 w-28 h-28 bg-gradient-to-br from-[#0284c7] to-[#0ea5e9] rounded-2xl pointer-events-none -z-0" />
 
                         {/* Cyan shape */}
                         <div className="absolute top-1/2 -left-6 -translate-y-1/2 w-72 h-80 bg-[#e0f2fe]/60 rounded-3xl pointer-events-none -z-0" />
@@ -116,11 +117,11 @@ export default function WhyChooseUsSection({ data = site.whyChooseUs }: WhyChoos
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.4 }}
-                            className="inline-flex items-center gap-3 text-[#f15a24] text-xs sm:text-sm font-bold tracking-widest uppercase mb-2"
+                            className="inline-flex items-center gap-3 text-[#0284c7] text-xs sm:text-sm font-bold tracking-widest uppercase mb-2"
                         >
-                            <span className="w-8 h-[2px] bg-[#f15a24]" />
+                            <span className="w-8 h-[2px] bg-[#0284c7]" />
                             <span>{data.subtitle}</span>
-                            <span className="w-8 h-[2px] bg-[#f15a24]" />
+                            <span className="w-8 h-[2px] bg-[#0284c7]" />
                         </motion.div>
 
                         {/* Main title */}
@@ -161,7 +162,7 @@ export default function WhyChooseUsSection({ data = site.whyChooseUs }: WhyChoos
                                         className="flex items-start gap-3.5 group"
                                     >
                                         {/* Circular icon badge */}
-                                        <div className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-[#e0f2fe]/75 text-[#054553] flex items-center justify-center shrink-0 border border-[#bae6fd]/50 transition-all duration-300 group-hover:scale-105 group-hover:bg-[#f15a24] group-hover:text-white shadow-xs">
+                                        <div className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-[#e0f2fe]/75 text-[#054553] flex items-center justify-center shrink-0 border border-[#bae6fd]/50 transition-all duration-300 group-hover:scale-105 group-hover:bg-gradient-to-r group-hover:from-[#0284c7] group-hover:to-[#0ea5e9] group-hover:text-white shadow-xs">
                                             <Icon className="w-6 h-6 stroke-[2]" />
                                         </div>
 
@@ -187,15 +188,16 @@ export default function WhyChooseUsSection({ data = site.whyChooseUs }: WhyChoos
                             transition={{ duration: 0.5, delay: 0.3 }}
                             className="mt-8"
                         >
-                            <Link
-                                href={data.ctaButton.href}
-                                className="group inline-flex items-center gap-4 pl-7 pr-2.5 py-2.5 rounded-full bg-gradient-to-r from-[#ea580c] via-[#f15a24] to-[#f97316] text-white font-medium text-sm sm:text-base shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 transition-all duration-200"
+                            <button
+                                type="button"
+                                onClick={() => openModal()}
+                                className="group inline-flex items-center gap-4 pl-7 pr-2.5 py-2.5 rounded-full bg-gradient-to-r from-[#0284c7] via-[#0ea5e9] to-[#06b6d4] text-white font-medium text-sm sm:text-base shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40 transition-all duration-200 cursor-pointer"
                             >
                                 <span>{data.ctaButton.text}</span>
-                                <div className="w-8 h-8 rounded-full bg-white text-[#f15a24] flex items-center justify-center shrink-0 shadow-sm transition-transform duration-200 group-hover:translate-x-0.5">
+                                <div className="w-8 h-8 rounded-full bg-white text-[#0284c7] flex items-center justify-center shrink-0 shadow-sm transition-transform duration-200 group-hover:translate-x-0.5">
                                     <ArrowRight className="w-4 h-4 stroke-[2.2]" />
                                 </div>
-                            </Link>
+                            </button>
                         </motion.div>
                     </div>
                 </div>

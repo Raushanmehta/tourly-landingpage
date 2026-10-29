@@ -49,7 +49,7 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
                     {Array.from({ length: testimonial.rating }).map((_, i) => (
                         <FaStar
                             key={i}
-                            className="w-4 h-4 text-[#f15a24] fill-[#f15a24]"
+                            className="w-4 h-4 text-[#f59e0b] fill-[#f59e0b]"
                         />
                     ))}
                 </div>
@@ -66,7 +66,7 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
                     {testimonial.name}
                 </h3>
                 <div className="flex items-center gap-1.5 text-gray-500 text-xs sm:text-sm font-medium mt-1">
-                    <FaMapMarkerAlt className="text-[#f15a24] w-3.5 h-3.5 shrink-0" />
+                    <FaMapMarkerAlt className="text-[#0284c7] w-3.5 h-3.5 shrink-0" />
                     <span>{testimonial.location}</span>
                 </div>
             </div>

@@ -82,7 +82,7 @@ export default function Footer({ data = site.footer }: FooterProps) {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             aria-label={item.name}
-                                            className="w-9 h-9 rounded-full border border-[#f15a24] text-white hover:bg-[#f15a24] hover:text-white flex items-center justify-center transition-colors duration-200"
+                                            className="w-9 h-9 rounded-full border border-[#0284c7] text-white hover:bg-[#0284c7] hover:text-white flex items-center justify-center transition-colors duration-200"
                                         >
                                             <IconComponent className="text-sm" />
                                         </Link>
@@ -98,7 +98,7 @@ export default function Footer({ data = site.footer }: FooterProps) {
                         <h3 className="font-semibold text-lg text-white tracking-wide">
                             {data.quickLinksTitle}
                         </h3>
-                        <div className="h-[2.5px] w-8 bg-[#f15a24] rounded-full mt-2 mb-6" />
+                        <div className="h-[2.5px] w-8 bg-[#0284c7] rounded-full mt-2 mb-6" />
 
                         {/* Links list */}
                         <ul className="space-y-3 text-sm">
@@ -108,7 +108,7 @@ export default function Footer({ data = site.footer }: FooterProps) {
                                         href={link.href}
                                         className="group inline-flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
                                     >
-                                        <FaChevronRight className="text-[10px] text-[#f15a24] shrink-0 transition-transform duration-200 group-hover:translate-x-1" />
+                                        <FaChevronRight className="text-[10px] text-[#38bdf8] shrink-0 transition-transform duration-200 group-hover:translate-x-1" />
                                         <span>{link.name}</span>
                                     </Link>
                                 </li>
@@ -122,7 +122,7 @@ export default function Footer({ data = site.footer }: FooterProps) {
                         <h3 className="font-semibold text-lg text-white tracking-wide">
                             {data.destinationsTitle}
                         </h3>
-                        <div className="h-[2.5px] w-8 bg-[#f15a24] rounded-full mt-2 mb-6" />
+                        <div className="h-[2.5px] w-8 bg-[#0284c7] rounded-full mt-2 mb-6" />
 
                         {/* Links list */}
                         <ul className="space-y-3 text-sm">
@@ -132,7 +132,7 @@ export default function Footer({ data = site.footer }: FooterProps) {
                                         href={link.href}
                                         className="group inline-flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
                                     >
-                                        <FaChevronRight className="text-[10px] text-[#f15a24] shrink-0 transition-transform duration-200 group-hover:translate-x-1" />
+                                        <FaChevronRight className="text-[10px] text-[#38bdf8] shrink-0 transition-transform duration-200 group-hover:translate-x-1" />
                                         <span>{link.name}</span>
                                     </Link>
                                 </li>
@@ -146,12 +146,12 @@ export default function Footer({ data = site.footer }: FooterProps) {
                         <h3 className="font-semibold text-lg text-white tracking-wide">
                             {data.contactTitle}
                         </h3>
-                        <div className="h-[2.5px] w-8 bg-[#f15a24] rounded-full mt-2 mb-6" />
+                        <div className="h-[2.5px] w-8 bg-[#0284c7] rounded-full mt-2 mb-6" />
 
                         <div className="space-y-5">
                             {/* Phone info */}
                             <div className="flex items-start gap-3.5">
-                                <div className="w-11 h-11 rounded-full bg-gradient-to-tr from-[#ea580c] to-[#f97316] text-white flex items-center justify-center shrink-0 shadow-md">
+                                <div className="w-11 h-11 rounded-full bg-gradient-to-tr from-[#0284c7] to-[#0ea5e9] text-white flex items-center justify-center shrink-0 shadow-md">
                                     <FaPhoneAlt className="text-sm" />
                                 </div>
                                 <div>
@@ -167,7 +167,7 @@ export default function Footer({ data = site.footer }: FooterProps) {
 
                             {/* Email info */}
                             <div className="flex items-start gap-3.5">
-                                <div className="w-11 h-11 rounded-full bg-gradient-to-tr from-[#ea580c] to-[#f97316] text-white flex items-center justify-center shrink-0 shadow-md">
+                                <div className="w-11 h-11 rounded-full bg-gradient-to-tr from-[#0284c7] to-[#0ea5e9] text-white flex items-center justify-center shrink-0 shadow-md">
                                     <FaEnvelope className="text-sm" />
                                 </div>
                                 <div>
@@ -183,7 +183,7 @@ export default function Footer({ data = site.footer }: FooterProps) {
 
                             {/* Address info */}
                             <div className="flex items-start gap-3.5">
-                                <div className="w-11 h-11 rounded-full bg-gradient-to-tr from-[#ea580c] to-[#f97316] text-white flex items-center justify-center shrink-0 shadow-md">
+                                <div className="w-11 h-11 rounded-full bg-gradient-to-tr from-[#0284c7] to-[#0ea5e9] text-white flex items-center justify-center shrink-0 shadow-md">
                                     <FaMapMarkerAlt className="text-sm" />
                                 </div>
                                 <div>

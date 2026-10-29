@@ -24,7 +24,7 @@ export default function DestinationSection({ data = site.destinations }: Destina
     };
 
     return (
-        <section className="relative w-full py-8 lg:py-12 bg-[#F6FBFE] overflow-hidden">
+        <section id="destinations" className="relative w-full py-8 lg:py-12 bg-[#F6FBFE] overflow-hidden scroll-mt-20">
             {/* World map watermark */}
             <div className="absolute right-0 top-0 w-80 sm:w-96 h-80 sm:h-96 pointer-events-none opacity-[0.06] bg-[radial-gradient(#054553_1px,transparent_1px)] [background-size:16px_16px]" />
 
@@ -39,11 +39,11 @@ export default function DestinationSection({ data = site.destinations }: Destina
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.4 }}
-                            className="inline-flex items-center justify-center gap-3 text-[#f15a24] text-xs sm:text-sm font-bold tracking-widest uppercase mb-2"
+                            className="inline-flex items-center justify-center gap-3 text-[#0284c7] text-xs sm:text-sm font-bold tracking-widest uppercase mb-2"
                         >
-                            <span className="w-8 h-[2px] bg-[#f15a24]" />
+                            <span className="w-8 h-[2px] bg-[#0284c7]" />
                             <span>{data.subtitle}</span>
-                            <span className="w-8 h-[2px] bg-[#f15a24]" />
+                            <span className="w-8 h-[2px] bg-[#0284c7]" />
                         </motion.div>
 
                         {/* Main title */}
@@ -55,7 +55,7 @@ export default function DestinationSection({ data = site.destinations }: Destina
                             className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-[#0f1d33] leading-tight text-center"
                         >
                             {data.titlePrefix}
-                            <span className="text-[#f15a24]">{data.titleHighlight}</span>
+                            <span className="text-[#0284c7]">{data.titleHighlight}</span>
                         </motion.h2>
 
                         {/* Description */}
@@ -80,7 +80,7 @@ export default function DestinationSection({ data = site.destinations }: Destina
                         whileTap={{ scale: 0.92 }}
                         onClick={() => handleScroll("left")}
                         aria-label="Previous destination"
-                        className="absolute left-1 sm:left-2 md:-left-4 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/95 hover:bg-gradient-to-r hover:from-[#ea580c] hover:to-[#f15a24] text-gray-800 hover:text-white shadow-xl hover:shadow-orange-500/30 border border-gray-100/90 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300 cursor-pointer pointer-events-none group-hover:pointer-events-auto"
+                        className="absolute left-1 sm:left-2 md:-left-4 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/95 hover:bg-gradient-to-r hover:from-[#0284c7] hover:to-[#06b6d4] text-gray-800 hover:text-white shadow-xl hover:shadow-sky-500/30 border border-gray-100/90 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300 cursor-pointer pointer-events-none group-hover:pointer-events-auto"
                     >
                         <FaChevronLeft className="text-sm sm:text-base pr-0.5" />
                     </motion.button>
@@ -92,7 +92,7 @@ export default function DestinationSection({ data = site.destinations }: Destina
                         whileTap={{ scale: 0.92 }}
                         onClick={() => handleScroll("right")}
                         aria-label="Next destination"
-                        className="absolute right-1 sm:right-2 md:-right-4 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/95 hover:bg-gradient-to-r hover:from-[#ea580c] hover:to-[#f15a24] text-gray-800 hover:text-white shadow-xl hover:shadow-orange-500/30 border border-gray-100/90 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-300 cursor-pointer pointer-events-none group-hover:pointer-events-auto"
+                        className="absolute right-1 sm:right-2 md:-right-4 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/95 hover:bg-gradient-to-r hover:from-[#0284c7] hover:to-[#06b6d4] text-gray-800 hover:text-white shadow-xl hover:shadow-sky-500/30 border border-gray-100/90 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-300 cursor-pointer pointer-events-none group-hover:pointer-events-auto"
                     >
                         <FaChevronRight className="text-sm sm:text-base pl-0.5" />
                     </motion.button>
@@ -106,25 +106,25 @@ export default function DestinationSection({ data = site.destinations }: Destina
                         ref={scrollRef}
                         className="flex items-stretch gap-3.5 sm:gap-4 overflow-x-auto pb-4 pt-1 pr-6 scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
                     >
-                    {(data.destinationsList || data.items || []).map((item) => {
-                        const isHovered = hoveredId === item.id;
-                        return (
-                            <div
-                                key={item.id}
-                                onMouseEnter={() => setHoveredId(item.id)}
-                                onMouseLeave={() => setHoveredId(null)}
-                                className={`shrink-0 transition-all duration-500 ease-out ${isHovered
-                                    ? "w-[330px] sm:w-[350px] md:w-[360px]"
-                                    : hoveredId !== null
-                                        ? "w-[210px] sm:w-[220px] md:w-[225px]"
-                                        : "w-[235px] sm:w-[245px] md:w-[255px]"
-                                    }`}
-                            >
-                                <DestinationCard item={item} />
-                            </div>
-                        );
-                    })}
-                </motion.div>
+                        {(data.destinationsList || []).map((item) => {
+                            const isHovered = hoveredId === item.id;
+                            return (
+                                <div
+                                    key={item.id}
+                                    onMouseEnter={() => setHoveredId(item.id)}
+                                    onMouseLeave={() => setHoveredId(null)}
+                                    className={`shrink-0 transition-all duration-500 ease-out ${isHovered
+                                        ? "w-[330px] sm:w-[350px] md:w-[360px]"
+                                        : hoveredId !== null
+                                            ? "w-[210px] sm:w-[220px] md:w-[225px]"
+                                            : "w-[235px] sm:w-[245px] md:w-[255px]"
+                                        }`}
+                                >
+                                    <DestinationCard item={item} />
+                                </div>
+                            );
+                        })}
+                    </motion.div>
                 </div>
             </div>
         </section>

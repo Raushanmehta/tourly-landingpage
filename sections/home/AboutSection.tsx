@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import {
     ShieldCheck,
@@ -13,6 +12,7 @@ import {
     ArrowRight,
 } from "lucide-react";
 import { site, type TourlyAboutData } from "@/data/index";
+import { useModal } from "@/components/common/ModalContext";
 
 const aboutIconMap: Record<string, React.ElementType> = {
     shieldCheck: ShieldCheck,
@@ -35,12 +35,13 @@ export default function AboutSection({
     hideButtons = false,
 }: AboutSectionProps) {
     const shouldShowButtons = showButtons && !hideButtons;
+    const { openModal } = useModal();
     return (
-        <section className="relative w-full py-8 lg:py-12 bg-white overflow-hidden">
+        <section id="about" className="relative w-full py-8 lg:py-12 bg-white overflow-hidden scroll-mt-20">
             {/* Top-left diamond pattern */}
             <div className="absolute top-10 left-6 sm:left-14 pointer-events-none opacity-45 hidden md:block">
                 <svg width="100" height="100" viewBox="0 0 100 100">
-                    <g stroke="#f15a24" strokeWidth="1.8" strokeLinecap="round">
+                    <g stroke="#0284c7" strokeWidth="1.8" strokeLinecap="round">
                         <line x1="45" y1="15" x2="55" y2="15" />
                         <line x1="38" y1="23" x2="62" y2="23" />
                         <line x1="30" y1="31" x2="70" y2="31" />
@@ -76,11 +77,11 @@ export default function AboutSection({
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4 }}
-                    className="flex items-center justify-center gap-3 text-[#f15a24] text-xs sm:text-sm font-bold tracking-widest uppercase mb-2.5"
+                    className="flex items-center justify-center gap-3 text-[#0284c7] text-xs sm:text-sm font-bold tracking-widest uppercase mb-2.5"
                 >
-                    <span className="w-8 h-[2px] bg-[#f15a24]" />
+                    <span className="w-8 h-[2px] bg-[#0284c7]" />
                     <span>{data.subtitle}</span>
-                    <span className="w-8 h-[2px] bg-[#f15a24]" />
+                    <span className="w-8 h-[2px] bg-[#0284c7]" />
                 </motion.div>
 
                 {/* Main Heading */}
@@ -131,7 +132,7 @@ export default function AboutSection({
                                 key={item.title}
                                 className="flex items-center gap-3.5 group"
                             >
-                                <div className="text-[#f15a24] shrink-0 transition-transform duration-200 group-hover:scale-110">
+                                <div className="text-[#0284c7] shrink-0 transition-transform duration-200 group-hover:scale-110">
                                     <Icon className="w-6 h-6 stroke-[2]" />
                                 </div>
                                 <span className="font-bold text-[#13253f] text-sm sm:text-[15px] tracking-tight">
@@ -157,15 +158,16 @@ export default function AboutSection({
                             whileTap={{ scale: 0.96 }}
                             transition={{ type: "spring", stiffness: 400, damping: 17 }}
                         >
-                            <Link
-                                href={data.contactButton.href}
-                                className="group flex items-center gap-4 pl-7 pr-2.5 py-2.5 rounded-full bg-gradient-to-r from-[#ea580c] via-[#f15a24] to-[#f97316] text-white font-medium text-sm sm:text-base shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 transition-all duration-200"
+                            <button
+                                type="button"
+                                onClick={() => openModal()}
+                                className="group flex items-center gap-4 pl-7 pr-2.5 py-2.5 rounded-full bg-gradient-to-r from-[#0284c7] via-[#0ea5e9] to-[#06b6d4] text-white font-medium text-sm sm:text-base shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40 transition-all duration-200 cursor-pointer"
                             >
                                 <span>{data.contactButton.text}</span>
-                                <div className="w-8 h-8 rounded-full bg-white text-[#f15a24] flex items-center justify-center shrink-0 shadow-sm transition-transform duration-200 group-hover:translate-x-0.5">
+                                <div className="w-8 h-8 rounded-full bg-white text-[#0284c7] flex items-center justify-center shrink-0 shadow-sm transition-transform duration-200 group-hover:translate-x-0.5">
                                     <ArrowRight className="w-4 h-4 stroke-[2.2]" />
                                 </div>
-                            </Link>
+                            </button>
                         </motion.div>
 
                         {/* Read More button */}
@@ -174,15 +176,16 @@ export default function AboutSection({
                             whileTap={{ scale: 0.96 }}
                             transition={{ type: "spring", stiffness: 400, damping: 17 }}
                         >
-                            <Link
-                                href={data.readMoreButton.href}
-                                className="group flex items-center gap-4 pl-7 pr-2.5 py-2 rounded-full border-2 border-[#f15a24] text-[#13253f] hover:bg-orange-50/50 font-medium text-sm sm:text-base transition-all duration-200"
+                            <button
+                                type="button"
+                                onClick={() => openModal()}
+                                className="group flex items-center gap-4 pl-7 pr-2.5 py-2 rounded-full border-2 border-[#0284c7] text-[#13253f] hover:bg-sky-50/60 font-medium text-sm sm:text-base transition-all duration-200 cursor-pointer"
                             >
                                 <span>{data.readMoreButton.text}</span>
-                                <div className="w-8 h-8 rounded-full border border-[#f15a24] text-[#f15a24] flex items-center justify-center shrink-0 transition-transform duration-200 group-hover:translate-x-0.5">
+                                <div className="w-8 h-8 rounded-full border border-[#0284c7] text-[#0284c7] flex items-center justify-center shrink-0 transition-transform duration-200 group-hover:translate-x-0.5">
                                     <ArrowRight className="w-4 h-4 stroke-[2.2]" />
                                 </div>
-                            </Link>
+                            </button>
                         </motion.div>
                     </motion.div>
                 )}

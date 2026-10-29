@@ -46,7 +46,7 @@ export default function HeroSection({ data = site.hero }: HeroSectionProps) {
     }, [api, onSelect]);
 
     return (
-        <section className="relative w-full overflow-hidden bg-black">
+        <section id="home" className="relative w-full overflow-hidden bg-black scroll-mt-20">
             <Carousel
                 setApi={setApi}
                 opts={{
@@ -60,18 +60,18 @@ export default function HeroSection({ data = site.hero }: HeroSectionProps) {
                     {data.slides.map((slide, index) => (
                         <CarouselItem key={slide.id} className="pl-0 relative">
                             {/* Slide container */}
-                            <div className="relative w-full h-[400px] sm:h-[450px] md:h-[580px] lg:h-[580px]">
+                            <div className="relative w-full h-[600px] sm:h-[600px] md:h-[600px] lg:h-[600px]">
                                 {/* Background image */}
                                 <Image
                                     src={slide.image}
                                     alt="Hero destination"
                                     fill
                                     priority={index === 0}
+                                    quality={95}
+                                    sizes="100vw"
+                                    unoptimized
                                     className="object-cover object-center"
                                 />
-
-                                {/* Subtle overall overlay */}
-                                <div className="absolute inset-0 bg-black/10 pointer-events-none" />
                             </div>
                         </CarouselItem>
                     ))}
@@ -110,12 +110,13 @@ export default function HeroSection({ data = site.hero }: HeroSectionProps) {
                             onClick={() => api?.scrollTo(idx)}
                             aria-label={`Go to slide ${idx + 1}`}
                             className={`transition-all duration-300 cursor-pointer ${current === idx
-                                ? "w-3.5 h-3.5 rounded-full bg-[#f15a24] shadow-md border-0"
+                                ? "w-3.5 h-3.5 rounded-full bg-[#0284c7] shadow-md border-0"
                                 : "w-3 h-3 rounded-full border-2 border-white bg-transparent opacity-75 hover:opacity-100"
                                 }`}
                         />
                     ))}
                 </div>
+
             </Carousel>
         </section>
     );

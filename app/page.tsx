@@ -4,6 +4,7 @@ import DestinationSection from "@/sections/home/DestinationSection";
 import WhyChooseUsSection from "@/sections/home/WhyChooseUsSection";
 import StatsSection from "@/sections/home/StatsSection";
 import TestimonialSection from "@/sections/home/TestimonialSection";
+import FaqsSection from "@/sections/home/FaqsSection";
 import { site } from "@/data/index";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <WhyChooseUsSection data={site.whyChooseUs} />
       <StatsSection data={site.stats} />
       <TestimonialSection data={site.testimonials} />
+      <FaqsSection data={site.faq} />
     </main>
   );
 }
